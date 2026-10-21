@@ -1,1 +1,26 @@
-{"card": "cards/2026-10-21-22-mmx-phobos.jpg", "lines": ["Japan has launched a mission to bring back a piece of a Martian moon.", "The spacecraft, called M M X, lifted off on an H3 rocket on October nineteenth.", "It should reach Mars in August twenty twenty-seven, and land on the moon Phobos twice.", "The goal is to return about ten grams of soil to Earth in twenty thirty-one.", "It would be the first sample ever brought back from the Mars system."]}
+{"kicker":"Science","title":"Japan's mission to a moon of Mars","credits":"Photos: SpaceX, NASA / Unsplash · Map: Natural Earth","lines":[
+ "Japan has launched one of the boldest missions in space exploration.",
+ "On October nineteenth, an H3 rocket lifted off from the Tanegashima Space Center, carrying a spacecraft called M M X.",
+ "It is led by Japan's space agency, JAXA, with help from NASA and the European Space Agency.",
+ "Its target is Phobos, the larger of the two small moons that circle Mars.",
+ "After about ten months in space, it should reach Mars in August, twenty twenty-seven.",
+ "There, it will map Phobos, choose landing sites, and touch down twice to collect samples.",
+ "A small French and German rover, called IDEFIX, is also due to drive on its surface.",
+ "The goal is to bring back about ten grams of Phobos soil.",
+ "The spacecraft is set to leave Mars in November, twenty thirty.",
+ "And its sample capsule should land in Australia, in twenty thirty-one.",
+ "If it succeeds, it will be the first sample ever brought back from the Mars system.",
+ "Follow Maps and Musings, for the world's biggest stories, explained."],
+ "scenes":[
+ {"type":"photo","src":"https://images.unsplash.com/photo-1457365050282-c53d772ef8b2","tag":"File photo"},
+ {"type":"map","countries":["JPN"],"pin":[30.40,130.97],"label":"Tanegashima","span":14,"span_start":90},
+ {"type":"photo","src":"https://images.unsplash.com/photo-1457364887197-9150188c107b","tag":"File photo"},
+ {"type":"photo","src":"https://images.unsplash.com/photo-1614728894747-a83421e2b9c9"},
+ {"type":"stat","big":"10 months","small":"Journey from Earth to Mars","src":"https://images.unsplash.com/photo-1614728894747-a83421e2b9c9"},
+ {"type":"photo","src":"https://images.unsplash.com/photo-1710676145420-5f54d4add1e0"},
+ {"type":"photo","src":"https://images.unsplash.com/photo-1614728894747-a83421e2b9c9"},
+ {"type":"stat","big":"10 g","small":"Of Phobos soil to bring back to Earth"},
+ {"type":"stat","big":"2030","small":"Spacecraft leaves Mars for home"},
+ {"type":"map","countries":["AUS"],"pin":[-25.3,133.8],"label":"Australia","span":45,"span_start":120},
+ {"type":"card","src":"cards/2026-10-21-22-mmx-phobos.jpg"},
+ {"type":"card","src":"cards/2026-10-21-22-mmx-phobos.jpg"}]}
