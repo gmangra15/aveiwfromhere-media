@@ -1,1 +1,26 @@
-{"card": "cards/2026-10-22-08-munir-tehran.jpg", "lines": ["Pakistan's army chief has been in Tehran, trying to revive talks between the United States and Iran.", "Field Marshal Asim Munir met President Masoud Pezeshkian and other Iranian leaders.", "Iranian leaders said Washington must take the first steps to rebuild trust.", "No breakthrough was announced.", "Pakistan, which brokered April's ceasefire, says it is still offering its good offices."]}
+{"kicker":"Region","title":"Pakistan's army chief in Tehran","credits":"Photos: hosein charbaghi, KAMRAN gholami / Unsplash · Map: Natural Earth","lines":[
+ "Pakistan is trying once again to bring the United States and Iran back to the table.",
+ "On Tuesday, Field Marshal Asim Munir, Pakistan's army chief, travelled to Tehran.",
+ "He was joined by Interior Minister Mohsin Naqvi.",
+ "They met President Masoud Pezeshkian, Parliament Speaker Ghalibaf, and Foreign Minister Araghchi.",
+ "Iranian leaders said Washington must take the first steps to rebuild trust.",
+ "They said accepting Tehran's seven-point proposal could be a starting point for new talks.",
+ "Speaker Ghalibaf said threats and military manoeuvres would not change Iran's decisions.",
+ "No breakthrough or formal agreement was announced.",
+ "Pakistan has played this role before. It brokered April's ceasefire, and hosted direct talks between the two sides in Islamabad.",
+ "Those talks produced the Islamabad Memorandum in June, before the process stalled.",
+ "Pakistan says it is still offering its good offices to both sides.",
+ "Follow Maps and Musings, for the region's biggest stories, explained."],
+ "scenes":[
+ {"type":"map","countries":["PAK","IRN"],"pin":[33.69,73.06],"label":"Islamabad","span":30,"span_start":110},
+ {"type":"map","countries":["PAK","IRN"],"pin":[35.69,51.39],"label":"Tehran","span":22,"span_start":40},
+ {"type":"photo","src":"https://images.unsplash.com/photo-1579878235007-a5a0b8f2072f","tag":"File photo · Tehran"},
+ {"type":"photo","src":"https://images.unsplash.com/photo-1613881348993-bc547b53daba","tag":"File photo · Tehran"},
+ {"type":"stat","big":"First step","small":"Iran says it must come from Washington"},
+ {"type":"stat","big":"7 points","small":"Tehran's proposal for restarting talks"},
+ {"type":"photo","src":"https://images.unsplash.com/photo-1637410909576-39822b1f254e","tag":"File photo · Tehran"},
+ {"type":"stat","big":"No deal","small":"No breakthrough announced"},
+ {"type":"map","countries":["PAK"],"pin":[33.69,73.06],"label":"Islamabad","span":14,"span_start":40},
+ {"type":"stat","big":"June","small":"Islamabad Memorandum agreed, later stalled"},
+ {"type":"card","src":"cards/2026-10-22-08-munir-tehran.jpg"},
+ {"type":"card","src":"cards/2026-10-22-08-munir-tehran.jpg"}]}
