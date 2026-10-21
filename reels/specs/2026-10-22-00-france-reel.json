@@ -1,1 +1,26 @@
-{"card": "cards/2026-10-22-00-france-curfews.jpg", "lines": ["France has imposed night curfews after weekend riots.", "Curfews now cover parts of Paris, Lyon, the Lille area, and Nice.", "According to the Interior Ministry, two thousand, three hundred and ninety-seven people were arrested on Sunday.", "Nine hundred and ninety-seven police officers and gendarmes were injured.", "The unrest comes six months before France's presidential election."]}
+{"kicker":"World","title":"France under curfew after weekend riots","credits":"Photos: Felipe Blanco, Pierre Blaché, Dyana Wing So / Unsplash · Map: Natural Earth","lines":[
+ "France is under curfew in several cities, after a weekend of riots and looting.",
+ "On Saturday, about five hundred and fifty thousand people joined protests across the country.",
+ "Some of those protests turned violent, with looting and clashes in several cities.",
+ "In Paris, a curfew now runs from eleven at night to six in the morning, around Place de la République and near Les Halles.",
+ "In Lyon, part of the city centre is under curfew from nine at night.",
+ "In the north, the Lille area has a two-day curfew, starting at eight in the evening.",
+ "And in Nice, the mayor has ordered a curfew for minors.",
+ "According to the Interior Ministry, two thousand, three hundred and ninety-seven people were arrested on Sunday.",
+ "Nine hundred and ninety-seven police officers and gendarmes were injured, seven of them seriously.",
+ "The prime minister says more curfews will be imposed wherever they are needed.",
+ "And all of this comes just six months before France's presidential election.",
+ "Follow Maps and Musings, for the world's biggest stories, explained."],
+ "scenes":[
+ {"type":"map","countries":["FRA"],"pin":[48.86,2.35],"label":"Paris","span":16,"span_start":110},
+ {"type":"stat","big":"550,000","small":"People joined protests across France on Saturday","src":"https://images.unsplash.com/photo-1641503855609-5e28a1ed35a9"},
+ {"type":"photo","src":"https://images.unsplash.com/photo-1641503855609-5e28a1ed35a9","tag":"File photo"},
+ {"type":"photo","src":"https://images.unsplash.com/photo-1589679288395-db7e004cfb11","tag":"File photo"},
+ {"type":"map","countries":["FRA"],"pin":[45.76,4.84],"label":"Lyon","span":9,"span_start":20},
+ {"type":"map","countries":["FRA"],"pin":[50.63,3.06],"label":"Lille","span":9,"span_start":20},
+ {"type":"map","countries":["FRA"],"pin":[43.70,7.27],"label":"Nice","span":9,"span_start":20},
+ {"type":"stat","big":"2,397","small":"Arrests on Sunday, says France's Interior Ministry"},
+ {"type":"stat","big":"997","small":"Police officers and gendarmes injured, 7 seriously"},
+ {"type":"photo","src":"https://images.unsplash.com/photo-1549699143-b6bf1cde4605","tag":"File photo"},
+ {"type":"card","src":"cards/2026-10-22-00-france-curfews.jpg"},
+ {"type":"card","src":"cards/2026-10-22-00-france-curfews.jpg"}]}
