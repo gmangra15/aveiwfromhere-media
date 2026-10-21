@@ -331,7 +331,7 @@ def make(spec, out):
         d.text((86, 98), "MAPS AND MUSINGS", font=fbrand, fill=INK, anchor="lm", stroke_width=2, stroke_fill=(0, 0, 0))
         # title over first scene
         if spec.get("title") and t < starts[1] if len(starts) > 1 else False:
-            al = ease((t - 0.2) / 0.7) * (1 - ease((t - (starts[1] - 0.6)) / 0.5))
+            al = (1.0 if t < 0.9 else 1.0) * (1 - ease((t - (starts[1] - 0.6)) / 0.5))
             if al > 0:
                 y0 = 300
                 if spec.get("kicker"):
@@ -364,7 +364,6 @@ def make(spec, out):
             d.text((W / 2, 975), "Follow @aveiwfromhere", font=fk, fill=tuple(int(v * al) for v in GOLD), anchor="mm")
             if spec.get("credits"):
                 d.text((W / 2, 1700), spec["credits"], font=fsm, fill=tuple(int(170 * al) for _ in range(3)), anchor="mm")
-        if t < 0.4: img = Image.blend(Image.new("RGB", (W, H)), img, t / 0.4)
         img.save(os.path.join(fr_dir, f"{fi:05d}.jpg"), quality=90)
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-framerate", str(FPS), "-i", os.path.join(fr_dir, "%05d.jpg"),
                     "-i", voice, "-i", os.path.join(tmp, "music.wav"),
