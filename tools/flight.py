@@ -95,12 +95,15 @@ def render(spec, out_dir):
     hp, tex, mpp, to_px = build(spec, os.path.join(os.path.dirname(out_dir.rstrip("/")) or ".", "tilecache"))
     Hh, Ww = hp.shape
     n = int(spec.get("seconds", 60) * FPS)
-    wps = []
+    wps, tg = [], []
     for lat, lon, alt, *rest in spec["waypoints"]:
         x, y = to_px(lat, lon); wps.append([x, y, alt / mpp])
+        if len(rest) >= 2: tg.append(list(to_px(rest[0], rest[1])))
     path = catmull(wps, n)
-    # smooth heading along path
-    look = np.roll(path, -int(FPS * 1.5), axis=0); look[-int(FPS * 1.5):] = path[-1] + (path[-1] - path[-2]) * np.arange(1, int(FPS * 1.5) + 1)[:, None]
+    if len(tg) == len(wps):
+        look = catmull(tg, n)  # explicit look-at targets
+    else:  # look ahead along the path
+        look = np.roll(path, -int(FPS * 1.5), axis=0); look[-int(FPS * 1.5):] = path[-1] + (path[-1] - path[-2]) * np.arange(1, int(FPS * 1.5) + 1)[:, None]
     fov = math.radians(spec.get("fov", 62)); focal = (RW / 2) / math.tan(fov / 2)
     D = 900; near, far = 4.0, spec.get("far_px", 3200.0)
     dist = near * (far / near) ** (np.arange(D) / (D - 1))
@@ -123,7 +126,8 @@ def render(spec, out_dir):
         inside = (X >= 0) & (X < Ww - 1) & (Y >= 0) & (Y < Hh - 1)
         Z = map_coordinates(hp, [Y.ravel(), X.ravel()], order=1, mode="nearest").reshape(D, RW)
         Z = np.where(inside, Z, -1e6)
-        pitch = spec.get("pitch", -0.18)
+        # positive pitch tilts the view down; tilt further down as the camera climbs
+        pitch = spec.get("pitch", 0.22) + 0.10 * min(1.0, max(0.0, (calt * mpp - 1200) / 2200))
         horizon = RH * 0.40 - pitch * focal
         perp = dist[:, None] * np.cos(ang)[None, :]
         sy = horizon - (Z - camz) / perp * focal
