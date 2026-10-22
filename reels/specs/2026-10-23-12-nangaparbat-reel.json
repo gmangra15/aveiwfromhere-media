@@ -1,0 +1,80 @@
+{
+ "kicker": "Nature",
+ "title": "Fly to Fairy Meadows and Nanga Parbat",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "3D terrain: AWS Terrain Tiles \u00b7 Imagery: Sentinel-2 cloudless 2016 by EOX (CC BY 4.0) \u00b7 Map: Natural Earth",
+ "lines": [
+  "This is Nanga Parbat, in Gilgit-Baltistan, the ninth-highest mountain in the world.",
+  "Our journey starts at Raikot Bridge, on the Karakoram Highway, beside the Indus River.",
+  "From here, jeeps climb a narrow mountain track, about fifteen kilometres long, to the village of Tato.",
+  "Then comes a hike of two to three hours on foot, up through the forest.",
+  "And then the valley opens up: Fairy Meadows, at about three thousand three hundred metres.",
+  "The story goes that in nineteen fifty-three, the climber Hermann Buhl called it M\u00e4rchenwiese, the fairy-tale meadow.",
+  "Today, visitors stay in wooden cottages and camps among the pine trees, with the mountain right in front of them.",
+  "From here, the trail continues towards Nanga Parbat's base camp, at almost four thousand metres.",
+  "And there it is: Nanga Parbat, eight thousand one hundred and twenty-six metres high.",
+  "It is known as the Killer Mountain, because so many climbers lost their lives on its slopes.",
+  "Hermann Buhl first reached its summit in nineteen fifty-three, and from Fairy Meadows, its great north face fills the sky.",
+  "Follow Maps and Musings, and explore Pakistan's most beautiful places with us."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "PAK"
+   ],
+   "pin": [
+    35.2375,
+    74.5892
+   ],
+   "label": "Nanga Parbat",
+   "span": 10,
+   "span_start": 60
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/nangaparbat.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/nangaparbat.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/nangaparbat.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/nangaparbat.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/nangaparbat.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/nangaparbat.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/nangaparbat.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/nangaparbat.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/nangaparbat.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/nangaparbat.json"
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-23-12-nanga-parbat.jpg"
+  }
+ ]
+}

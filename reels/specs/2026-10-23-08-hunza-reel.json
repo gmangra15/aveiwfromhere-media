@@ -1,0 +1,85 @@
+{
+ "kicker": "Heritage",
+ "title": "Fly over Hunza: Baltit, Altit and Rakaposhi",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "3D terrain: AWS Terrain Tiles \u00b7 Imagery: Sentinel-2 cloudless 2016 by EOX (CC BY 4.0) \u00b7 Map: Natural Earth",
+ "lines": [
+  "This is the Hunza Valley, in Gilgit-Baltistan, at the heart of the Karakoram mountains.",
+  "Let's fly up the valley, following the Hunza River, between some of the highest peaks on Earth.",
+  "Ahead, on the green mountainside, is Karimabad, the old capital of the Hunza kingdom.",
+  "Above the town stands Baltit Fort. Its history goes back more than seven hundred years.",
+  "For centuries it was home to the Mirs, the rulers of Hunza, until the last Mir moved to a new palace in nineteen forty-five.",
+  "After years of decay, the Aga Khan Trust for Culture restored it, and in nineteen ninety-six it reopened as a museum.",
+  "Just along the valley is Altit Fort, built in the eleventh century, the oldest surviving monument in the region.",
+  "It stands on rock more than a thousand feet above the Hunza River, and its restoration won a UNESCO heritage award in twenty eleven.",
+  "These forts guarded a valley linked to the ancient Silk Road, and many people here still speak Burushaski, a language unrelated to any other known language.",
+  "Now, let's turn around, and look to the south-west.",
+  "That is Rakaposhi, rising seven thousand, seven hundred and eighty-eight metres above sea level.",
+  "Its snowy face towers over the valley, and the view from Karimabad is one of the most famous in Pakistan.",
+  "Follow Maps and Musings, and explore Pakistan's most beautiful places with us."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "PAK"
+   ],
+   "pin": [
+    36.32,
+    74.66
+   ],
+   "label": "Hunza",
+   "span": 10,
+   "span_start": 60
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/hunza.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/hunza.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/hunza.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/hunza.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/hunza.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/hunza.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/hunza.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/hunza.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/hunza.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/hunza.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/hunza.json"
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-23-08-hunza.jpg"
+  }
+ ]
+}

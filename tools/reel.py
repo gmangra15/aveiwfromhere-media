@@ -415,7 +415,7 @@ def make(spec, out):
                     if d.textlength(tst, font=ftitle) < W - 120: cur = tst
                     else: lines.append(cur); cur = w
                 lines.append(cur)
-                for j, ln in enumerate(lines[:3]):
+                for j, ln in enumerate(lines[:4]):
                     d.text((W / 2, y0 + 120 + j * 128), ln, font=ftitle, fill=tuple(int(c * al) for c in INK), anchor="mm",
                            stroke_width=3, stroke_fill=(0, 0, 0))
         # subtitles

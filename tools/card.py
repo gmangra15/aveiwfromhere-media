@@ -99,9 +99,29 @@ def render(spec, out):
         if len(lines) <= 3 or hs <= 56: break
         hs -= 6
     ff = font(REG, 38)
-    block = 90 + len(lines) * int(hs * 1.18) + 26
-    for fact in spec.get("facts", [])[:3]:
-        block += 50 * len(wrap(d, fact, ff, W - 2 * M - 40)) + 18
+    facts = list(spec.get("facts", [])[:3])
+    def block_h(lines, hs, facts):
+        b = 90 + len(lines) * int(hs * 1.18) + 26
+        for fact in facts: b += 50 * len(wrap(d, fact, ff, W - 2 * M - 40)) + 18
+        return b
+    if photo_h:
+        # keep everything above the footer: shrink the photo, then the headline, then drop facts
+        while block_h(lines, hs, facts) > H - 150 - (photo_h - 90):
+            if photo_h > 560:
+                photo_h -= 40
+            elif hs > 60:
+                hs -= 6; hf = serif(hs); lines = wrap(d, spec["headline"], hf, W - 2 * M)
+            elif facts:
+                facts.pop()
+            else:
+                break
+        if photo_h < 760:  # re-fade the photo bottom at the new height
+            fade = Image.new("L", (1, 760 - photo_h + 200))
+            for yy in range(fade.height):
+                fade.putpixel((0, yy), int(255 * min(1, yy / 200)))
+            img.paste(Image.new("RGB", (W, fade.height), NAVY), (0, photo_h - 200), fade.resize((W, fade.height)))
+    spec = dict(spec, facts=facts)
+    block = block_h(lines, hs, facts)
     y = (photo_h - 90) if photo_h else max(200, (H - 130 - 150 - block) // 2 + 150)
     kicker = spec["kicker"].upper()
     kf = font(BOLD, 30); kw = d.textlength(kicker, font=kf)
