@@ -12,6 +12,8 @@ spec.json:
                real licensed photo with a slow camera move (tag optional, shown small)
            {"type":"stat", "big":"2,397", "small":"ARRESTS ON SUNDAY", "src":"<optional photo>"}
                animated number callout (counts up if numeric)
+           {"type":"people", "people":[{"src":..., "name":"Masoud Pezeshkian", "role":"President of Iran"}], "caption":"Met in Tehran", "credit":"Photo: ..."}
+               real, licensed portraits (1-2) of public figures in the story, with name/role bars
            {"type":"card", "src":"cards/<file>.jpg"}   the branded news card
   title, kicker   headline shown over the first scene
   credits         end-screen credit line (photo credits)
@@ -227,6 +229,45 @@ def photo_frame(sc, u, k, cache):
     return fr
 
 
+def people_frame(sc, u, cache):
+    """1-2 real, licensed portraits with TV-style name/role lower-thirds.
+    sc = {"type":"people", "people":[{"src":..., "name":..., "role":..., "cy":0.35}], "caption":"MET IN TEHRAN", "credit":"Photo: ..."}"""
+    ppl = sc["people"][:2]
+    first = cache[ppl[0]["src"]]
+    bg = ImageEnhance.Brightness(cover(first, W, H, 1.15).filter(ImageFilter.GaussianBlur(45))).enhance(0.3)
+    img = bg; d = ImageDraw.Draw(img)
+    a = eo(u * 4); z = 1.0 + 0.06 * ease(u)
+    if len(ppl) == 1:
+        boxes = [((W - 820) // 2, 300, 820, 980)]
+    else:
+        boxes = [(50, 380, 470, 640), (W - 520, 380, 470, 640)]
+    for (bx, by, bw, bh), p in zip(boxes, ppl):
+        im = cache[p["src"]]
+        crop = cover(im, int(bw * z), int(bh * z), 1.0, p.get("cx", 0.5), p.get("cy", 0.35))
+        crop = crop.crop(((crop.width - bw) // 2, (crop.height - bh) // 2, (crop.width - bw) // 2 + bw, (crop.height - bh) // 2 + bh))
+        mask = Image.new("L", (bw, bh), 0); ImageDraw.Draw(mask).rounded_rectangle([0, 0, bw, bh], radius=28, fill=int(255 * a))
+        yoff = int(40 * (1 - a))
+        img.paste(crop, (bx, by + yoff), mask)
+        d.rounded_rectangle([bx - 3, by + yoff - 3, bx + bw + 3, by + bh + yoff + 3], radius=30, outline=tuple(int(c * a) for c in GOLD), width=4)
+        # lower third
+        ly = by + bh + 30 + yoff
+        fn = font(BOLD, 52 if len(ppl) == 1 else 38); fr_ = font(BOLD, 32 if len(ppl) == 1 else 26)
+        name = p["name"]; role = p.get("role", "").upper()
+        tw = max(d.textlength(name, font=fn), d.textlength(role, font=fr_)) + 50
+        cx = bx + bw / 2
+        d.rounded_rectangle([cx - tw / 2, ly, cx + tw / 2, ly + (130 if len(ppl) == 1 else 104)], radius=14, fill=(0, 0, 0))
+        d.rectangle([cx - tw / 2, ly, cx - tw / 2 + 10, ly + (130 if len(ppl) == 1 else 104)], fill=GOLD)
+        d.text((cx + 5, ly + (44 if len(ppl) == 1 else 36)), name, font=fn, fill=tuple(int(c * a) for c in INK), anchor="mm")
+        d.text((cx + 5, ly + (98 if len(ppl) == 1 else 78)), role, font=fr_, fill=tuple(int(c * a) for c in GOLD), anchor="mm")
+    if sc.get("caption"):
+        f = font(BOLD, 40); cap = sc["caption"].upper(); tw = d.textlength(cap, font=f)
+        d.rounded_rectangle([W / 2 - tw / 2 - 24, 230, W / 2 + tw / 2 + 24, 290], radius=10, fill=tuple(int(c * a) for c in GOLD))
+        d.text((W / 2, 260), cap, font=f, fill=NAVY, anchor="mm")
+    if sc.get("credit"):
+        d.text((W - 50, 1470), sc["credit"], font=font(REG, 24), fill=(150, 150, 160), anchor="rm")
+    return img
+
+
 def stat_frame(sc, u, cache):
     if sc.get("src"):
         bg = cover(cache[sc["src"]], W, H, 1.1 + 0.05 * u).filter(ImageFilter.GaussianBlur(18))
@@ -303,6 +344,8 @@ def make(spec, out):
     cache = {}
     for s in scenes:
         if s.get("src") and s["src"] not in cache: cache[s["src"]] = load(s["src"])
+        for pp in s.get("people", []):
+            if pp["src"] not in cache: cache[pp["src"]] = load(pp["src"])
     starts = [LEAD + times[0][0] - LEAD] + [LEAD + times[i][0] - 0.2 for i in range(1, len(times))]
     ends = starts[1:] + [dur]
     subs = [(a + LEAD, b + LEAD, t) for a, b, t in chunks(times)]
@@ -315,6 +358,7 @@ def make(spec, out):
         if sc["type"] == "map": return map_frame(sc, u, t)
         if sc["type"] == "photo": return photo_frame(sc, u, i, cache)
         if sc["type"] == "stat": return stat_frame(sc, u, cache)
+        if sc["type"] == "people": return people_frame(sc, u, cache)
         return card_frame(sc, u, cache)
 
     fr_dir = os.path.join(tmp, "f"); os.makedirs(fr_dir)
