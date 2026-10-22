@@ -1,0 +1,23 @@
+{"kicker":"Hunza, Gilgit-Baltistan","title":"Fly over Attabad Lake","voice":"bm_george","speed":0.92,
+ "credits":"3D: AWS Terrain Tiles · Imagery: Sentinel-2 cloudless 2016 by EOX (CC BY 4.0) · Map: Natural Earth",
+ "lines":[
+ "Welcome to Hunza, in Pakistan's far north, high in the Karakoram mountains.",
+ "Let's fly up the valley, following the Hunza River.",
+ "Ahead lies the village of Attabad.",
+ "In January, twenty ten, a huge landslide came down from these slopes, burying homes, and blocking the river completely.",
+ "With nowhere to go, the water began to rise behind it.",
+ "Over the following months, a new lake filled the valley, drowning fields, villages, and a long stretch of the Karakoram Highway.",
+ "Today, this is Attabad Lake.",
+ "Its water, coloured by fine glacial silt, shines a striking turquoise.",
+ "It winds for kilometres between mountain walls, that rise thousands of metres on either side.",
+ "Further north lies Gulmit, one of the communities whose land was flooded as the lake grew.",
+ "From a disaster, a new landscape was born. Today, it is one of Gilgit-Baltistan's most visited sights.",
+ "Follow Maps and Musings, for more of Pakistan, explored."],
+ "scenes":[
+ {"type":"map","countries":["PAK"],"pin":[36.32,74.86],"label":"Hunza","span":10,"span_start":60},
+ {"type":"flight","spec":"reels/flights/attabad.json"},{"type":"flight","spec":"reels/flights/attabad.json"},
+ {"type":"flight","spec":"reels/flights/attabad.json"},{"type":"flight","spec":"reels/flights/attabad.json"},
+ {"type":"flight","spec":"reels/flights/attabad.json"},{"type":"flight","spec":"reels/flights/attabad.json"},
+ {"type":"flight","spec":"reels/flights/attabad.json"},{"type":"flight","spec":"reels/flights/attabad.json"},
+ {"type":"flight","spec":"reels/flights/attabad.json"},{"type":"flight","spec":"reels/flights/attabad.json"},
+ {"type":"card","src":"cards/2026-10-22-10-attabad.jpg"}]}

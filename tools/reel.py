@@ -14,6 +14,8 @@ spec.json:
                animated number callout (counts up if numeric)
            {"type":"people", "people":[{"src":..., "name":"Masoud Pezeshkian", "role":"President of Iran"}], "caption":"Met in Tehran", "credit":"Photo: ..."}
                real, licensed portraits (1-2) of public figures in the story, with name/role bars
+           {"type":"flight", "spec":"path/to/flight.json"}  3D flythrough over real terrain (tools/flight.py);
+               consecutive flight scenes form one continuous flight; labels may use {"line": i} to sync with narration
            {"type":"card", "src":"cards/<file>.jpg"}   the branded news card
   title, kicker   headline shown over the first scene
   credits         end-screen credit line (photo credits)
@@ -67,23 +69,27 @@ def ensure_tts():
     np.savez(f"{TTS}/voices.npz", **vs)
 
 
-def narrate(lines, tmp):
+def narrate(lines, tmp, voice_name="blend", speed=0.95):
     ensure_tts()
     from kokoro_onnx import Kokoro
     import soundfile as sf
     k = Kokoro(f"{TTS}/model.onnx", f"{TTS}/voices.npz")
-    v = k.get_voice_style("bm_george") * 0.75 + k.get_voice_style("bm_fable") * 0.25
+    v = (k.get_voice_style("bm_george") * 0.75 + k.get_voice_style("bm_fable") * 0.25) if voice_name == "blend" else voice_name
     out, times, t, sr = [], [], 0.0, 24000
-    for ln in lines:
-        a, sr = k.create(ln, voice=v, speed=0.95, lang="en-gb")
+    for i, ln in enumerate(lines):
+        a, sr = k.create(ln, voice=v, speed=speed, lang="en-gb")
+        # trim leading/trailing silence for tighter, more natural pacing
+        nz = np.where(np.abs(a) > 0.004)[0]
+        if len(nz): a = a[max(0, nz[0] - int(0.03 * sr)): nz[-1] + int(0.08 * sr)]
         times.append((t, t + len(a) / sr, ln)); out.append(a)
-        out.append(np.zeros(int(sr * 0.45), dtype=np.float32)); t += len(a) / sr + 0.45
+        gap = 0.62 if ln.rstrip().endswith(("?", "!")) else (0.55 if i % 3 == 2 else 0.42)
+        out.append(np.zeros(int(sr * gap), dtype=np.float32)); t += len(a) / sr + gap
     raw = os.path.join(tmp, "raw.wav"); sf.write(raw, np.concatenate(out), sr)
     voice = os.path.join(tmp, "voice.wav")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", raw, "-af",
-                    "highpass=f=60,equalizer=f=180:t=q:w=1:g=2.5,equalizer=f=3200:t=q:w=1.2:g=2,"
-                    "acompressor=threshold=-20dB:ratio=3:attack=8:release=120,aecho=0.8:0.5:35|70:0.10|0.06,"
-                    "loudnorm=I=-16:TP=-1.5:LRA=7", "-ar", "44100", voice], check=True)
+                    "highpass=f=70,lowshelf=f=140:g=2,equalizer=f=320:t=q:w=1.2:g=-1.5,equalizer=f=3000:t=q:w=1.4:g=2.2,"
+                    "deesser=i=0.4,acompressor=threshold=-22dB:ratio=2.5:attack=10:release=150:makeup=2,"
+                    "aecho=0.85:0.6:22|41:0.07|0.04,loudnorm=I=-15:TP=-1.5:LRA=6", "-ar", "44100", voice], check=True)
     return voice, times, t
 
 
@@ -333,7 +339,7 @@ def legacy_scenes(spec, n):
 
 def make(spec, out):
     tmp = tempfile.mkdtemp()
-    voice, times, nar = narrate(spec["lines"], tmp)
+    voice, times, nar = narrate(spec["lines"], tmp, spec.get("voice", "blend"), spec.get("speed", 0.95))
     LEAD, TAIL = 0.6, 2.8
     dur = LEAD + nar + TAIL
     if dur < 60 and not spec.get("allow_short"):
@@ -342,6 +348,24 @@ def make(spec, out):
     scenes = [scenes[min(i, len(scenes) - 1)] for i in range(len(times))]
     music(dur, os.path.join(tmp, "music.wav"), "news" if any(s["type"] in ("map", "stat") for s in scenes) else "calm")
     cache = {}
+    # pre-render 3D flight if requested: labels keyed by narration line
+    fl = [i for i, s_ in enumerate(scenes) if s_["type"] == "flight"]
+    flight_t0 = None
+    if fl:
+        flight_t0 = LEAD + times[fl[0]][0] - (0 if fl[0] == 0 else 0.2)
+        fspec = json.load(open(scenes[fl[0]]["spec"]))
+        fspec["seconds"] = (LEAD + times[fl[-1]][1] + 0.6) - flight_t0
+        labs = []
+        for lb in fspec.get("labels", []):
+            if "line" in lb:
+                a0 = LEAD + times[lb["line"]][0] - flight_t0; a1 = LEAD + times[lb.get("to_line", lb["line"])][1] - flight_t0 + 1.0
+                labs.append(dict(lb, t0=max(0, a0), t1=a1))
+            else: labs.append(lb)
+        fspec["labels"] = labs; fspec.pop("only", None)
+        fdir = os.path.join(tmp, "flight")
+        sys.path.insert(0, HERE); import flight as _fl
+        _fl.render(fspec, fdir)
+        cache["__flightdir__"] = fdir; cache["__flightn__"] = len(os.listdir(fdir))
     for s in scenes:
         if s.get("src") and s["src"] not in cache: cache[s["src"]] = load(s["src"])
         for pp in s.get("people", []):
@@ -359,6 +383,9 @@ def make(spec, out):
         if sc["type"] == "photo": return photo_frame(sc, u, i, cache)
         if sc["type"] == "stat": return stat_frame(sc, u, cache)
         if sc["type"] == "people": return people_frame(sc, u, cache)
+        if sc["type"] == "flight":
+            k = min(cache["__flightn__"] - 1, max(0, int((t - flight_t0) * FPS)))
+            return Image.open(os.path.join(cache["__flightdir__"], f"{k:05d}.jpg")).convert("RGB")
         return card_frame(sc, u, cache)
 
     fr_dir = os.path.join(tmp, "f"); os.makedirs(fr_dir)
