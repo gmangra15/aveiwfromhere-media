@@ -1,0 +1,118 @@
+{
+ "kicker": "War",
+ "title": "Record ship attacks in the Strait of Hormuz",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Photos: Chris LeBoutillier, Anders Marlowe, Karthik B K / Unsplash · Map: Natural Earth",
+ "lines": [
+  "October has become the worst month yet for ships in the Strait of Hormuz.",
+  "The Washington Institute for Near East Policy counted twenty-eight attacks on ships in and around the strait this month, a record.",
+  "That makes one hundred and thirteen attacks since the US-Israeli war with Iran began, on the twenty-eighth of February.",
+  "The consultancy Marisks says a dozen ships were attacked in a single week, from the fifth to the eleventh of October, the most of the conflict.",
+  "A Reuters review of shipping data shows more than thirty giant crude tankers damaged since the war began, eleven of them in October.",
+  "Each of these supertankers can carry about two million barrels of oil.",
+  "Now, an oil spill has reached the beaches of Umm Al Quwain, in the United Arab Emirates.",
+  "The UAE's environment ministry says clean-up teams are at work, and the emirate's beaches have been closed.",
+  "Daily freight rates for tankers have topped one million dollars.",
+  "An analyst at the Washington Institute says Iran is stepping up attacks to keep pressure on energy markets, ahead of the US midterm elections in November.",
+  "For oil importers like Pakistan, every spike in tension can feed straight into fuel prices.",
+  "Follow Maps and Musings, for the world's biggest stories, explained."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "IRN",
+    "OMN",
+    "ARE"
+   ],
+   "pin": [
+    26.57,
+    56.25
+   ],
+   "label": "Strait of Hormuz",
+   "span": 22,
+   "span_start": 90
+  },
+  {
+   "type": "stat",
+   "big": "28",
+   "small": "Attacks on ships in and around Hormuz in October, a record"
+  },
+  {
+   "type": "stat",
+   "big": "113",
+   "small": "Ship attacks since the war began on 28 February"
+  },
+  {
+   "type": "stat",
+   "big": "12",
+   "small": "Ships attacked in one week, 5-11 October, says Marisks"
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1642285709726-f9eb035b034b",
+   "tag": "File photo"
+  },
+  {
+   "type": "stat",
+   "big": "2 million",
+   "small": "Barrels of crude one supertanker can carry",
+   "src": "https://images.unsplash.com/photo-1675720998093-f6dd91cb9016"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "ARE"
+   ],
+   "pin": [
+    25.56,
+    55.55
+   ],
+   "label": "Umm Al Quwain",
+   "span": 6,
+   "span_start": 30
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1668060742975-9a462159b0bd",
+   "tag": "UAE, file photo"
+  },
+  {
+   "type": "stat",
+   "big": "$1 million+",
+   "small": "Daily freight rates for tankers"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "IRN",
+    "USA"
+   ],
+   "pin": [
+    35.69,
+    51.39
+   ],
+   "label": "Tehran",
+   "span": 30,
+   "span_start": 70
+  },
+  {
+   "type": "map",
+   "countries": [
+    "PAK"
+   ],
+   "pin": [
+    24.86,
+    67.01
+   ],
+   "label": "Karachi",
+   "span": 16,
+   "span_start": 50
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-25-00-hormuz-record.jpg"
+  }
+ ]
+}

@@ -1,0 +1,128 @@
+{
+ "kicker": "War",
+ "title": "Could Iran cut the Gulf's internet cables?",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Photos: Anders Marlowe, Karthik B K, Chris LeBoutillier / Unsplash · Map: Natural Earth",
+ "lines": [
+  "Iran is reportedly preparing a new kind of threat: cutting the internet under the sea.",
+  "Two senior Iranian security officials told Reuters that Tehran has detailed plans to target undersea communication cables in the Gulf.",
+  "They said the plans would be used if the United States and Israel attack Iran again.",
+  "One official said Iran would also try to block repairs, to make internet outages last longer.",
+  "Earlier, a Revolutionary Guards official, Yadollah Javani, said Iran could target seven major internet cables beneath the Strait of Hormuz.",
+  "Undersea cables carry about ninety-nine percent of global internet traffic, according to the UN's telecommunication agency.",
+  "But an expert at TeleGeography says less than one percent of international bandwidth passes through the Strait of Hormuz, so the global impact could be limited.",
+  "The Red Sea matters more. It carries around ten percent of internet traffic between regions.",
+  "According to Reuters, Iranian strikes hit two Amazon Web Services facilities in the UAE in March.",
+  "Analysts say the threats are meant to deter a new war, and to pressure Washington through worried Gulf governments.",
+  "The US State Department and Iran's foreign ministry did not respond to Reuters' requests for comment.",
+  "Follow Maps and Musings, for the world's biggest stories, explained."
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1675720998093-f6dd91cb9016",
+   "tag": "File photo"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "IRN",
+    "SAU",
+    "ARE",
+    "QAT",
+    "BHR",
+    "KWT",
+    "OMN"
+   ],
+   "pin": [
+    26.5,
+    52.5
+   ],
+   "label": "The Gulf",
+   "span": 24,
+   "span_start": 90
+  },
+  {
+   "type": "map",
+   "countries": [
+    "IRN",
+    "USA",
+    "ISR"
+   ],
+   "pin": [
+    35.69,
+    51.39
+   ],
+   "label": "Tehran",
+   "span": 30,
+   "span_start": 70
+  },
+  {
+   "type": "stat",
+   "big": "Longer outages",
+   "small": "Iran would try to block cable repairs, an official told Reuters"
+  },
+  {
+   "type": "stat",
+   "big": "7",
+   "small": "Major internet cables under the Strait of Hormuz, says an IRGC official"
+  },
+  {
+   "type": "stat",
+   "big": "99%",
+   "small": "Of global internet traffic travels through undersea cables (ITU)"
+  },
+  {
+   "type": "stat",
+   "big": "<1%",
+   "small": "Of international bandwidth passes through Hormuz, says TeleGeography"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "EGY",
+    "SAU",
+    "YEM",
+    "ERI",
+    "SDN"
+   ],
+   "pin": [
+    20.0,
+    38.5
+   ],
+   "label": "Red Sea",
+   "span": 22,
+   "span_start": 60
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1668060742975-9a462159b0bd",
+   "tag": "UAE, file photo"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "IRN",
+    "OMN",
+    "ARE"
+   ],
+   "pin": [
+    26.57,
+    56.25
+   ],
+   "label": "Strait of Hormuz",
+   "span": 12,
+   "span_start": 40
+  },
+  {
+   "type": "stat",
+   "big": "No comment",
+   "small": "From the US State Department or Iran's foreign ministry"
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-25-10-iran-cables.jpg"
+  }
+ ]
+}

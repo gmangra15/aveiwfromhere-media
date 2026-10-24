@@ -1,0 +1,80 @@
+{
+ "kicker": "Culture",
+ "title": "Fly into the Kalash valleys of Chitral",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "3D terrain: AWS Terrain Tiles \u00b7 Imagery: Sentinel-2 cloudless 2016 by EOX (CC BY 4.0) \u00b7 Map: Natural Earth",
+ "lines": [
+  "High in the Hindu Kush, in Chitral district of Khyber Pakhtunkhwa, live the Kalash people.",
+  "Let's fly up the Chitral River, towards three small valleys that are home to one of Pakistan's smallest communities.",
+  "Here, a side valley opens to the west.",
+  "This is Bumburet, the largest of the three Kalash valleys.",
+  "The Kalash number only a few thousand people, about four thousand by one estimate.",
+  "They have their own language, Kalasha, and their own ancient religion and traditions.",
+  "Kalash women are known for their black dresses, embroidered with bright colours, and their elaborate headdresses.",
+  "To the north lies the Rumbur valley.",
+  "Every May, the valleys welcome spring with the Chilam Joshi festival: three days of music, circle dances, and prayers for the fields and animals.",
+  "To the south is Birir. In winter, all three valleys celebrate Chawmos, their grand new year festival, for about two weeks.",
+  "Scholars still debate where the Kalash came from, and UNESCO has considered their culture for World Heritage listing.",
+  "Follow Maps and Musings, and explore Pakistan's cultures with us."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "PAK"
+   ],
+   "pin": [
+    35.71,
+    71.72
+   ],
+   "label": "Kalash valleys",
+   "span": 10,
+   "span_start": 60
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/kalash.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/kalash.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/kalash.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/kalash.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/kalash.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/kalash.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/kalash.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/kalash.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/kalash.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/kalash.json"
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-25-12-kalash.jpg"
+  }
+ ]
+}

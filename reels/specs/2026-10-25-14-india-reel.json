@@ -1,0 +1,125 @@
+{
+ "kicker": "Region",
+ "title": "A US-India trade deal is 'weeks away'",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Photos: Chris LeBoutillier, Anders Marlowe / Unsplash · Map: Natural Earth",
+ "lines": [
+  "The United States and India say a big trade deal is almost done.",
+  "US Secretary of State Marco Rubio began a two-day visit to India on the twentieth of October, landing in Mumbai.",
+  "He held talks with India's foreign minister, S. Jaishankar, and visited Jamnagar, home of the world's largest refining complex, run by Reliance Industries.",
+  "Rubio told India's News18 channel that he expects a deal within weeks, not months.",
+  "Days before the trip, President Trump delayed tariffs on Indian imports.",
+  "He also waived tariffs that could have punished India for buying Russian oil.",
+  "A law signed in September allows tariffs of up to one hundred percent on the top five buyers of Russian oil. India ranks second, after China.",
+  "India imports more than eighty-five percent of the crude oil it needs.",
+  "Rubio says India has diversified its energy, but still gets a substantial amount from Russia.",
+  "Geography is real, he said. For some countries, it is very difficult to buy energy elsewhere.",
+  "Closer US-India trade ties are something Islamabad will be watching closely.",
+  "Follow Maps and Musings, for South Asia and the world, explained."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "IND",
+    "USA"
+   ],
+   "pin": [
+    19.08,
+    72.88
+   ],
+   "label": "Mumbai",
+   "span": 50,
+   "span_start": 140
+  },
+  {
+   "type": "map",
+   "countries": [
+    "IND"
+   ],
+   "pin": [
+    19.08,
+    72.88
+   ],
+   "label": "Mumbai",
+   "span": 14,
+   "span_start": 40
+  },
+  {
+   "type": "map",
+   "countries": [
+    "IND"
+   ],
+   "pin": [
+    22.47,
+    70.06
+   ],
+   "label": "Jamnagar",
+   "span": 12,
+   "span_start": 30
+  },
+  {
+   "type": "stat",
+   "big": "Weeks",
+   "small": "Not months, Rubio says, until a trade deal"
+  },
+  {
+   "type": "stat",
+   "big": "Delayed",
+   "small": "Trump's tariffs on Indian imports"
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1642285709726-f9eb035b034b",
+   "tag": "File photo"
+  },
+  {
+   "type": "stat",
+   "big": "100%",
+   "small": "Maximum tariff allowed on top buyers of Russian oil; India ranks second"
+  },
+  {
+   "type": "stat",
+   "big": "85%+",
+   "small": "Share of its crude oil India imports"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "IND",
+    "RUS"
+   ],
+   "pin": [
+    55.75,
+    37.62
+   ],
+   "label": "Russia",
+   "span": 60,
+   "span_start": 100
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1675720998093-f6dd91cb9016",
+   "tag": "File photo"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "PAK",
+    "IND"
+   ],
+   "pin": [
+    33.69,
+    73.04
+   ],
+   "label": "Islamabad",
+   "span": 20,
+   "span_start": 50
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-25-14-us-india-trade.jpg"
+  }
+ ]
+}

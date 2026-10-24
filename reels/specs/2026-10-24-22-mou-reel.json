@@ -1,0 +1,133 @@
+{
+ "kicker": "Pakistan",
+ "title": "Four nations back Pakistan's Iran-US peace effort",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Photos: Cengiz Özarpat, Popup Agency / Unsplash · Map: Natural Earth",
+ "lines": [
+  "Four Muslim powers have publicly backed Pakistan's peace effort between Iran and the United States.",
+  "At a meeting in Istanbul on Friday, the R4 group, Pakistan, Türkiye, Saudi Arabia and Egypt, issued a joint statement.",
+  "It expressed support for the Islamabad MoU, the Pakistan-brokered understanding meant to keep the pause in US-Iran hostilities from collapsing.",
+  "The ministers said the conflict with Iran must be addressed only through dialogue and diplomacy.",
+  "They called for the swift and full resumption of safe passage through the Strait of Hormuz.",
+  "They strongly condemned Houthi attacks on Saudi Arabia, and on shipping in the Red Sea.",
+  "On Palestine, they backed an independent state on the nineteen sixty-seven lines, with East Jerusalem as its capital.",
+  "Then, for the first time, they sat down with Britain, France and Germany, joined by Italy.",
+  "Türkiye's foreign minister, Hakan Fidan, said military intervention in Iran is by no means a solution.",
+  "France's foreign minister said the eight countries agreed to keep meeting at regular intervals.",
+  "For Pakistan, it is a diplomatic boost for its role as a mediator between Washington and Tehran.",
+  "Follow Maps and Musings, for Pakistan and the world, explained."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "PAK",
+    "IRN",
+    "USA"
+   ],
+   "pin": [
+    33.69,
+    73.04
+   ],
+   "label": "Islamabad",
+   "span": 60,
+   "span_start": 140
+  },
+  {
+   "type": "map",
+   "countries": [
+    "PAK",
+    "TUR",
+    "SAU",
+    "EGY"
+   ],
+   "pin": [
+    41.01,
+    28.98
+   ],
+   "label": "Istanbul",
+   "span": 45,
+   "span_start": 90
+  },
+  {
+   "type": "stat",
+   "big": "Islamabad MoU",
+   "small": "Pakistan-brokered understanding between Iran and the US"
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1728113278031-30d24597673d",
+   "tag": "Türkiye, file photo"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "IRN",
+    "OMN",
+    "ARE"
+   ],
+   "pin": [
+    26.57,
+    56.25
+   ],
+   "label": "Strait of Hormuz",
+   "span": 14,
+   "span_start": 50
+  },
+  {
+   "type": "map",
+   "countries": [
+    "YEM",
+    "SAU"
+   ],
+   "pin": [
+    15.37,
+    44.19
+   ],
+   "label": "Yemen",
+   "span": 24,
+   "span_start": 60
+  },
+  {
+   "type": "stat",
+   "big": "1967 lines",
+   "small": "R4 backs a Palestinian state with East Jerusalem as its capital"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "GBR",
+    "FRA",
+    "DEU",
+    "ITA"
+   ],
+   "pin": [
+    48.0,
+    8.0
+   ],
+   "label": "E3 + Italy",
+   "span": 24,
+   "span_start": 60
+  },
+  {
+   "type": "stat",
+   "big": "“No solution”",
+   "small": "Türkiye's Hakan Fidan on military intervention in Iran"
+  },
+  {
+   "type": "stat",
+   "big": "8 nations",
+   "small": "Agreed to keep meeting at regular intervals"
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1700901742651-6b353164caf3",
+   "tag": "Gulf region, file photo"
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-24-22-islamabad-mou.jpg"
+  }
+ ]
+}

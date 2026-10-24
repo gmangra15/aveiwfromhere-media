@@ -12,7 +12,7 @@ Markdown body (## headings, paragraphs, lists)...
 
 Usage: python3 tools/site.py
 """
-import html, json, os, shutil, glob, datetime
+import html, json, os, re, shutil, glob, datetime
 import markdown
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -72,7 +72,8 @@ FOOT = """<footer><div class="wrap">© {year} Maps and Musings · Follow us on F
 
 def parse(path):
     raw = open(path, encoding="utf-8").read()
-    _, head, body = raw.split("---", 2)
+    # header is delimited by lines that are exactly '---' (URLs may contain '---')
+    _, head, body = re.split(r"^---[ \t]*$", raw, maxsplit=2, flags=re.M)
     meta = json.loads(head)
     meta["slug"] = os.path.splitext(os.path.basename(path))[0]
     meta["html"] = markdown.markdown(body.strip(), extensions=["extra"])
