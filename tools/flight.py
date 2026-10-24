@@ -49,7 +49,7 @@ def build(spec, cache):
     img, (ix0, iy0) = fetch(zi, "img", bbox, cache)
     dem, (dx0, dy0) = fetch(zd, "dem", bbox, cache)
     a = np.asarray(dem).astype(np.float32)
-    hdem = a[..., 0] * 256 + a[..., 1] + a[..., 2] / 256 - 32768
+    hdem = np.maximum(a[..., 0] * 256 + a[..., 1] + a[..., 2] / 256 - 32768, 0)  # sea surface flat at 0
     tex = np.asarray(img).astype(np.float32)
     Hh, Ww = tex.shape[:2]
     # resample DEM onto image grid
