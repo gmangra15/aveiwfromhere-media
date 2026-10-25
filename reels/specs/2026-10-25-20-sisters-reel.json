@@ -1,0 +1,90 @@
+{
+ "kicker": "Pakistan",
+ "title": "Why are Imran Khan's sisters still detained?",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Photos: Unsplash (Lahore, file) · Map: Natural Earth",
+ "lines": [
+  "The Lahore High Court wants to know why Imran Khan's three sisters are still in custody.",
+  "Aleema Khan, Uzma Khan and Noreen Niazi were detained in September, ahead of PTI's planned protest march to Islamabad on the twenty-seventh.",
+  "Aleema was detained on the twentieth of September. Uzma and Noreen were taken into custody a day later.",
+  "Lahore's deputy commissioner issued thirty-day detention orders under the public order law, citing police reports of a threat to public order.",
+  "A new petition, filed by Aleema's son, Shahrez Khan, says those orders expired on the nineteenth of October.",
+  "Yet, it says, the three women remain in Kot Lakhpat Jail, and are not wanted in any criminal case.",
+  "The petition argues that preventive detention cannot replace ordinary criminal law, and asks the court to order their release.",
+  "On Thursday, Justice Abher Gul Khan summoned Punjab's home secretary and the jail superintendent.",
+  "They must explain why the women are still held after their detention periods ended.",
+  "The court will hear the case again on the twenty-eighth of October.",
+  "No response from the Punjab government to the petition has been reported so far.",
+  "Follow Maps and Musings, for Pakistan's politics, explained."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "PAK"
+   ],
+   "pin": [
+    31.55,
+    74.34
+   ],
+   "label": "Lahore",
+   "span": 16,
+   "span_start": 70
+  },
+  {
+   "type": "stat",
+   "big": "3 sisters",
+   "small": "Aleema Khan · Uzma Khan · Noreen Niazi"
+  },
+  {
+   "type": "stat",
+   "big": "20–21 Sept",
+   "small": "When the three sisters were detained"
+  },
+  {
+   "type": "stat",
+   "big": "30 days",
+   "small": "Length of the detention orders under the public order law"
+  },
+  {
+   "type": "stat",
+   "big": "19 Oct",
+   "small": "When the orders expired, according to the petition"
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1614253070729-56057a3ca5f2",
+   "tag": "Lahore, file photo"
+  },
+  {
+   "type": "stat",
+   "big": "Article 10",
+   "small": "Constitutional protection cited in the petition"
+  },
+  {
+   "type": "stat",
+   "big": "Summoned",
+   "small": "Punjab's home secretary and Kot Lakhpat Jail superintendent"
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1653673662935-ae19b645096f",
+   "tag": "Lahore, file photo"
+  },
+  {
+   "type": "stat",
+   "big": "28 Oct",
+   "small": "Next hearing at the Lahore High Court"
+  },
+  {
+   "type": "stat",
+   "big": "No response",
+   "small": "From the Punjab government reported so far"
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-25-20-imran-sisters.jpg"
+  }
+ ]
+}

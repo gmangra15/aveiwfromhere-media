@@ -1,0 +1,101 @@
+{
+ "kicker": "Pakistan",
+ "title": "Lahore's smog season has begun",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Photos: Unsplash (Lahore) · Map: Natural Earth",
+ "lines": [
+  "This week, Lahore was ranked the most polluted city in the world.",
+  "On Friday morning, IQAir's live ranking put Lahore first, with an air quality index of three hundred and forty-four, in the hazardous category.",
+  "New Delhi was second, at two hundred and forty-four.",
+  "In some parts of Lahore, readings were even worse. Iqbal Town reached five hundred and thirty-five, according to Geo News.",
+  "The main pollutant is fine dust, known as PM two point five, small enough to enter the bloodstream.",
+  "Punjab officials blamed easterly winds carrying polluted air from across the border, as well as local emissions.",
+  "Crop burning, traffic, factories and construction dust all add to the winter smog.",
+  "Anti-smog guns were deployed across Lahore, spraying water to settle the dust.",
+  "Then, on Saturday, rain and hail fell across the city, and the AQI dropped to about one hundred and forty-two.",
+  "But the weather is expected to turn dry again, and the smog season usually lasts into winter.",
+  "Doctors advise masks outdoors, less outdoor exercise, and extra care for children and older people.",
+  "Follow Maps and Musings, for Pakistan's biggest stories, explained."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "PAK",
+    "IND"
+   ],
+   "pin": [
+    31.55,
+    74.34
+   ],
+   "label": "Lahore",
+   "span": 18,
+   "span_start": 70
+  },
+  {
+   "type": "stat",
+   "big": "344",
+   "small": "Lahore's AQI on Friday morning, 'hazardous', worst in the world (IQAir)",
+   "src": "https://images.unsplash.com/photo-1653673662935-ae19b645096f"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "IND",
+    "PAK"
+   ],
+   "pin": [
+    28.61,
+    77.21
+   ],
+   "label": "New Delhi",
+   "span": 14,
+   "span_start": 40
+  },
+  {
+   "type": "stat",
+   "big": "535",
+   "small": "AQI in Iqbal Town, Lahore, says Geo News"
+  },
+  {
+   "type": "stat",
+   "big": "PM2.5",
+   "small": "Fine particles small enough to enter the bloodstream"
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1614253070729-56057a3ca5f2",
+   "tag": "Lahore, file photo"
+  },
+  {
+   "type": "stat",
+   "big": "4 sources",
+   "small": "Crop burning · Traffic · Industry · Construction dust"
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1653673662935-ae19b645096f",
+   "tag": "Lahore, file photo"
+  },
+  {
+   "type": "stat",
+   "big": "142",
+   "small": "Lahore's AQI after Saturday's rain and hail"
+  },
+  {
+   "type": "stat",
+   "big": "Dry again",
+   "small": "Forecast for most of Punjab, as smog season continues"
+  },
+  {
+   "type": "stat",
+   "big": "Wear a mask",
+   "small": "Doctors' advice for anyone outdoors"
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-25-16-lahore-smog.jpg"
+  }
+ ]
+}

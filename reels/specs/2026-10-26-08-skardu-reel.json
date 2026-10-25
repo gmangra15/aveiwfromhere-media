@@ -1,0 +1,80 @@
+{
+ "kicker": "Nature",
+ "title": "Fly over Skardu: Indus, Kharpocho and Satpara",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "3D terrain: AWS Terrain Tiles \u00b7 Imagery: Sentinel-2 cloudless 2016 by EOX (CC BY 4.0) \u00b7 Map: Natural Earth",
+ "lines": [
+  "In Gilgit-Baltistan, at nearly two thousand four hundred and thirty metres, lies Skardu, the capital of Baltistan.",
+  "Let's fly in from the west, along the wide, sandy valley.",
+  "Below us is the Indus River, one of the great rivers of Asia.",
+  "Skardu stands where the Indus meets the Shigar River.",
+  "It is the gateway to the giants: K2, Broad Peak and the Gasherbrums are all reached from here.",
+  "On a rocky hill above the town stands Kharpocho Fort, built under the Maqpoon rulers, most famously Ali Sher Khan Anchan.",
+  "Its history goes back to the late fifteenth and sixteenth centuries, and it still watches over the Indus valley.",
+  "Now we turn south, to Satpara Lake, about nine kilometres from the city.",
+  "Satpara is Skardu's main source of drinking water, and it feeds Satpara Dam, which supplies water and electricity to the region.",
+  "Beyond it, the road climbs to the Deosai plains, home to brown bears and snow leopards.",
+  "The best time to visit is May to September. In winter, many roads and trails close.",
+  "Follow Maps and Musings, and explore Pakistan's most beautiful places with us."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "PAK"
+   ],
+   "pin": [
+    35.3,
+    75.63
+   ],
+   "label": "Skardu",
+   "span": 10,
+   "span_start": 60
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/skardu.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/skardu.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/skardu.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/skardu.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/skardu.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/skardu.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/skardu.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/skardu.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/skardu.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/skardu.json"
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-26-08-skardu.jpg"
+  }
+ ]
+}

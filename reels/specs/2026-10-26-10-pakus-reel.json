@@ -1,0 +1,119 @@
+{
+ "kicker": "Economy",
+ "title": "Is a Pakistan-US trade deal close?",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Photos: Shujaat Muzaffar, Muhammad Amir / Unsplash · Map: Natural Earth",
+ "lines": [
+  "Pakistan and the United States say they are close to a new trade agreement.",
+  "Commerce Secretary Jawad Paul says both sides have made substantial progress on a bilateral reciprocal trade deal.",
+  "He says only a few technical points remain, to be settled with the office of the US Trade Representative.",
+  "He made the remarks at a meeting between Commerce Minister Jam Kamal Khan and the US charge d'affaires, Natalie Baker.",
+  "Pakistan wants faster US inspection visits, so that Pakistani mangoes can be exported to America.",
+  "It is also pushing for market access for Pakistani dates, which would help growers, especially in Balochistan.",
+  "The US side wants to sell more cotton and soybeans to Pakistan.",
+  "Both sides also discussed American investment in farm machinery, food processing, cold storage, and minerals and mining.",
+  "Pakistan raised concerns about disrupted land trade routes with Afghanistan and Central Asia.",
+  "Karachi will host the FoodAg twenty twenty-six exhibition from the twenty-third to the twenty-sixth of November.",
+  "A deal could open new doors for Pakistani exporters in one of the world's biggest markets.",
+  "Follow Maps and Musings, for Pakistan's economy, explained."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "PAK",
+    "USA"
+   ],
+   "pin": [
+    33.69,
+    73.04
+   ],
+   "label": "Islamabad",
+   "span": 60,
+   "span_start": 140
+  },
+  {
+   "type": "stat",
+   "big": "Substantial progress",
+   "small": "On the Pakistan-US reciprocal trade agreement"
+  },
+  {
+   "type": "stat",
+   "big": "USTR",
+   "small": "Few technical points left with the US Trade Representative"
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1642709441467-6816f4dec4af",
+   "tag": "Karachi, file photo"
+  },
+  {
+   "type": "stat",
+   "big": "Mangoes",
+   "small": "Pakistan wants faster US inspection visits"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "PAK"
+   ],
+   "pin": [
+    28.5,
+    65.5
+   ],
+   "label": "Balochistan",
+   "span": 14,
+   "span_start": 40
+  },
+  {
+   "type": "stat",
+   "big": "Cotton & soybeans",
+   "small": "US exports discussed"
+  },
+  {
+   "type": "stat",
+   "big": "Minerals",
+   "small": "Mining investment and technical cooperation on the table"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "PAK",
+    "AFG",
+    "UZB",
+    "TKM",
+    "TJK"
+   ],
+   "pin": [
+    38.0,
+    66.0
+   ],
+   "label": "Central Asia",
+   "span": 30,
+   "span_start": 60
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1721988277528-06a27beb1811",
+   "tag": "Karachi, file photo"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "USA"
+   ],
+   "pin": [
+    38.9,
+    -77.04
+   ],
+   "label": "United States",
+   "span": 40,
+   "span_start": 80
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-26-10-pak-us-trade.jpg"
+  }
+ ]
+}

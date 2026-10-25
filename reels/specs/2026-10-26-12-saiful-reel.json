@@ -1,0 +1,80 @@
+{
+ "kicker": "Nature",
+ "title": "Fly to Lake Saiful Muluk",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "3D terrain: AWS Terrain Tiles \u00b7 Imagery: Sentinel-2 cloudless 2016 by EOX (CC BY 4.0) \u00b7 Map: Natural Earth",
+ "lines": [
+  "In the Kaghan Valley of Khyber Pakhtunkhwa lies one of Pakistan's most famous lakes: Saiful Muluk.",
+  "We start above the town of Naran, at the northern end of the valley.",
+  "From here, a mountain road climbs east, towards the lake.",
+  "And there it is: Lake Saiful Muluk, at about three thousand two hundred and twenty-four metres above sea level.",
+  "It is often called Pakistan's highest alpine lake, with cold, clear, greenish-blue water.",
+  "Glaciers and snowy peaks surround it, including Malika Parbat, the Queen of the Mountains.",
+  "The lake takes its name from a legend. Prince Saif-ul-Malook of Egypt fell in love with a fairy princess, Badi-ul-Jamal.",
+  "In the story, a white giant held her captive, and when the lovers escaped, his fury caused a great flood.",
+  "Locals say nearby Ansoo Lake was formed from the giant's tears, and that the couple still dance above the water on full-moon nights.",
+  "The poet Mian Muhammad Bakhsh told this tale in a famous Punjabi poem.",
+  "The best time to visit is June to September. In winter, heavy snow freezes the lake.",
+  "Follow Maps and Musings, and explore Pakistan's most beautiful places with us."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "PAK"
+   ],
+   "pin": [
+    34.877,
+    73.694
+   ],
+   "label": "Lake Saiful Muluk",
+   "span": 10,
+   "span_start": 60
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/saiful.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/saiful.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/saiful.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/saiful.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/saiful.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/saiful.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/saiful.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/saiful.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/saiful.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/saiful.json"
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-26-12-saiful-muluk.jpg"
+  }
+ ]
+}

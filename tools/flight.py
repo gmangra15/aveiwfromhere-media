@@ -34,7 +34,13 @@ def fetch(z, kind, bbox, cache):
         if not os.path.exists(p):
             u = (f"https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png" if kind == "dem"
                  else f"https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless_3857/default/g/{z}/{y}/{x}.jpg")
-            r = S.get(u, timeout=60); r.raise_for_status(); open(p, "wb").write(r.content)
+            for attempt in range(5):  # tile servers / proxy occasionally drop connections
+                try:
+                    r = S.get(u, timeout=60); r.raise_for_status(); break
+                except requests.RequestException:
+                    if attempt == 4: raise
+                    import time; time.sleep(3 * (attempt + 1))
+            open(p, "wb").write(r.content)
         return xy, Image.open(p).convert("RGB")
     out = Image.new("RGB", (256 * (x1 - x0 + 1), 256 * (y1 - y0 + 1)))
     with cf.ThreadPoolExecutor(8) as ex:

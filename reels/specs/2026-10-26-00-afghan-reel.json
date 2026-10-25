@@ -1,0 +1,125 @@
+{
+ "kicker": "Region",
+ "title": "Pakistan, the Taliban and Khalilzad's claims",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Photos: Muhammad Amir / Unsplash · Map: Natural Earth",
+ "lines": [
+  "Pakistan has rejected claims that it is arming Afghans to fight the Taliban.",
+  "The claims came from Zalmay Khalilzad, the former US envoy who negotiated America's deal with the Taliban.",
+  "On X, he said there were many reports that Pakistan was arming Afghans, and warned that ties could get much worse.",
+  "Pakistan's information ministry called them sweeping, baseless assertions.",
+  "It said they distract from the Taliban's responsibility to stop Afghan soil being used for attacks on Pakistan.",
+  "Islamabad pointed to UN monitoring reports on the presence of the TTP and Al-Qaeda in Afghanistan.",
+  "It also cited a US inspector general report estimating the TTP's strength at four to six thousand fighters.",
+  "The Taliban's spokesman, Zabiullah Mujahid, said Afghanistan has no interest in creating insecurity in Pakistan.",
+  "Pakistan demands that the Taliban end support for the TTP and the BLA, and says it remains open to engagement based on verifiable action.",
+  "Relations are tense. In September, Pakistan carried out airstrikes in the border region after attacks in Khyber Pakhtunkhwa.",
+  "Islamabad says it has repeatedly asked Kabul to dismantle militant sanctuaries.",
+  "Follow Maps and Musings, for South Asia and the world, explained."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "PAK",
+    "AFG"
+   ],
+   "pin": [
+    34.53,
+    69.17
+   ],
+   "label": "Kabul",
+   "span": 24,
+   "span_start": 90
+  },
+  {
+   "type": "map",
+   "countries": [
+    "USA",
+    "AFG"
+   ],
+   "pin": [
+    38.9,
+    -77.04
+   ],
+   "label": "Washington",
+   "span": 40,
+   "span_start": 100
+  },
+  {
+   "type": "stat",
+   "big": "“Much worse”",
+   "small": "Khalilzad's warning about Pakistan-Taliban ties"
+  },
+  {
+   "type": "stat",
+   "big": "“Baseless”",
+   "small": "Pakistan's information ministry on the claims"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "PAK",
+    "AFG"
+   ],
+   "pin": [
+    34.0,
+    71.5
+   ],
+   "label": "Border region",
+   "span": 12,
+   "span_start": 40
+  },
+  {
+   "type": "stat",
+   "big": "UN reports",
+   "small": "Cited by Pakistan on TTP and Al-Qaeda in Afghanistan"
+  },
+  {
+   "type": "stat",
+   "big": "4,000–6,000",
+   "small": "TTP fighters, says a US inspector general report"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "AFG"
+   ],
+   "pin": [
+    31.61,
+    65.71
+   ],
+   "label": "Kandahar",
+   "span": 14,
+   "span_start": 40
+  },
+  {
+   "type": "stat",
+   "big": "Verifiable action",
+   "small": "Pakistan's condition for engagement"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "PAK"
+   ],
+   "pin": [
+    34.01,
+    71.58
+   ],
+   "label": "Khyber Pakhtunkhwa",
+   "span": 12,
+   "span_start": 40
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1721988277528-06a27beb1811",
+   "tag": "File photo"
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-26-00-pak-afghan.jpg"
+  }
+ ]
+}

@@ -1,0 +1,117 @@
+{
+ "kicker": "War",
+ "title": "Musk, Starlink and Ukraine's war",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Photos: SpaceX, NASA, Glib Albovsky / Unsplash · Map: Natural Earth",
+ "lines": [
+  "Ukraine says its military's Starlink satellite internet is working again, after more than a week of disruption.",
+  "Starlink, run by Elon Musk's SpaceX, is vital for Ukraine's drones, communications and front-line logistics.",
+  "Ukrainian commanders reported lost drones and disrupted missions while the restrictions were in place.",
+  "Then, Musk said on X that SpaceX had throttled the service.",
+  "He said Ukraine's military had violated Starlink's terms of service by using it for offensive drone strikes, and that the loophole was closed last week.",
+  "Musk said Starshield, the military version of the system, is controlled by the US government.",
+  "President Trump says he did not make the call, and that Musk should not be blamed.",
+  "Ukraine's defence minister credited talks with Washington for the restoration.",
+  "President Zelensky said: the speeds are now where they need to be.",
+  "Meanwhile, Russia, Ukraine and the US are expected to hold new talks in Abu Dhabi in the first half of November.",
+  "And both sides say a local ceasefire around Oleshky, in the Kherson region, starts on the twenty-seventh of October.",
+  "Follow Maps and Musings, for the world's biggest stories, explained."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "UKR",
+    "RUS"
+   ],
+   "pin": [
+    50.45,
+    30.52
+   ],
+   "label": "Kyiv",
+   "span": 30,
+   "span_start": 110
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1457364887197-9150188c107b",
+   "tag": "File photo"
+  },
+  {
+   "type": "stat",
+   "big": "1 week+",
+   "small": "How long Ukraine's Starlink restrictions lasted"
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9",
+   "tag": "File photo"
+  },
+  {
+   "type": "stat",
+   "big": "“Terms of service”",
+   "small": "Musk's reason for throttling: offensive drone strikes"
+  },
+  {
+   "type": "stat",
+   "big": "Starshield",
+   "small": "Military version of Starlink, controlled by the US government, says Musk"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "USA"
+   ],
+   "pin": [
+    38.9,
+    -77.04
+   ],
+   "label": "Washington",
+   "span": 30,
+   "span_start": 80
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1639341267320-2d062b250c0d",
+   "tag": "Kyiv, file photo"
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1559588512-cae70b7dd3d7",
+   "tag": "Kyiv, file photo"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "ARE",
+    "RUS",
+    "UKR"
+   ],
+   "pin": [
+    24.45,
+    54.38
+   ],
+   "label": "Abu Dhabi",
+   "span": 30,
+   "span_start": 80
+  },
+  {
+   "type": "map",
+   "countries": [
+    "UKR"
+   ],
+   "pin": [
+    46.61,
+    32.72
+   ],
+   "label": "Oleshky, Kherson",
+   "span": 10,
+   "span_start": 40
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-25-22-starlink.jpg"
+  }
+ ]
+}

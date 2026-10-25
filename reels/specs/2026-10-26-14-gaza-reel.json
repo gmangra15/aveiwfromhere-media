@@ -1,0 +1,100 @@
+{
+ "kicker": "World",
+ "title": "Gaza: food aid cut for half a million people",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Map: Natural Earth",
+ "lines": [
+  "The UN's World Food Programme has cut food aid to more than half a million people in Gaza, because it is running out of money.",
+  "This summer, the WFP was helping feed about one point six million people, around three quarters of Gaza's population.",
+  "From October, that has fallen to one point one million people a month.",
+  "Food parcels have been halved, from two to one, and daily hot meals have been cut from two hundred and fifty thousand to one hundred and fifty thousand.",
+  "The agency says it needs four hundred million euros over the next six months, for Gaza and the occupied West Bank.",
+  "About two thirds of Gaza's people face crisis levels of hunger or worse, and around two hundred thousand are one step from famine.",
+  "More than two thousand eight hundred children were admitted for malnutrition treatment in September, according to the UN's humanitarian office.",
+  "Prices are high. A tray of eggs costs around sixty shekels, nearly twenty dollars, according to Al Jazeera.",
+  "Unemployment stands at about eighty percent, according to UN data cited by the Irish Times.",
+  "Famine was declared in Gaza City in August last year, and receded after a ceasefire, but the WFP calls those gains very fragile.",
+  "Its country director says the situation is still brutal, and that Gaza needs investment in recovery.",
+  "Follow Maps and Musings, for the world's biggest stories, explained."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "PSE",
+    "ISR",
+    "EGY"
+   ],
+   "pin": [
+    31.5,
+    34.45
+   ],
+   "label": "Gaza",
+   "span": 10,
+   "span_start": 70
+  },
+  {
+   "type": "stat",
+   "big": "1.6 million",
+   "small": "People the WFP helped feed this summer"
+  },
+  {
+   "type": "stat",
+   "big": "1.1 million",
+   "small": "People it can help each month from October"
+  },
+  {
+   "type": "stat",
+   "big": "2 → 1",
+   "small": "Food parcels halved; hot meals cut from 250,000 to 150,000 a day"
+  },
+  {
+   "type": "stat",
+   "big": "€400 million",
+   "small": "WFP funding needed for the next six months"
+  },
+  {
+   "type": "stat",
+   "big": "200,000",
+   "small": "People one step from famine (IPC phase 4)"
+  },
+  {
+   "type": "stat",
+   "big": "2,800+",
+   "small": "Children admitted for malnutrition treatment in September (OCHA)"
+  },
+  {
+   "type": "stat",
+   "big": "$19",
+   "small": "Price of a tray of eggs in Gaza, says Al Jazeera"
+  },
+  {
+   "type": "stat",
+   "big": "~80%",
+   "small": "Unemployment in Gaza, according to UN data"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "PSE"
+   ],
+   "pin": [
+    31.52,
+    34.45
+   ],
+   "label": "Gaza City",
+   "span": 4,
+   "span_start": 20
+  },
+  {
+   "type": "stat",
+   "big": "“Still brutal”",
+   "small": "WFP country director Shaun Hughes"
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-26-14-gaza-wfp.jpg"
+  }
+ ]
+}

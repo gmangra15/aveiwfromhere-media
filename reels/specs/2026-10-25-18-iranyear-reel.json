@@ -1,0 +1,134 @@
+{
+ "kicker": "War",
+ "title": "Could the Iran war last another year?",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Photos: Unsplash (Tehran, file) · Map: Natural Earth",
+ "lines": [
+  "America's ambassador to the United Nations says the war with Iran could last another year.",
+  "Mike Waltz told the Financial Times that the US would not meet its key goals until Iran gives up its highly enriched uranium.",
+  "He said the US Navy could keep up its blockade of Iranian ports for the foreseeable future.",
+  "President Trump says any new strikes would wait until after the US midterm elections on the third of November.",
+  "Iran's army chief says US warships will never be allowed into the Persian Gulf, under any circumstances.",
+  "Oil markets are nervous. Brent crude rose above one hundred and seventeen dollars a barrel on Friday, its highest since March.",
+  "At the start of October, it was below ninety-seven dollars.",
+  "The US State Department is also reducing staff at embassies in Jordan, Lebanon, Qatar and the UAE.",
+  "But there is still a diplomatic door. Iran's ambassador to Pakistan says Tehran remains open to talks under the Pakistan-brokered interim deal agreed in June.",
+  "And in Istanbul, European and Middle Eastern ministers urged restraint, warning that escalation would leave no winners.",
+  "For Pakistan, which imports most of its oil, a long war means a long period of high fuel prices.",
+  "Follow Maps and Musings, for the world's biggest stories, explained."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "IRN",
+    "USA"
+   ],
+   "pin": [
+    35.69,
+    51.39
+   ],
+   "label": "Tehran",
+   "span": 30,
+   "span_start": 110
+  },
+  {
+   "type": "stat",
+   "big": "1 more year",
+   "small": "How long the war could last, says US envoy Mike Waltz"
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1579878235007-a5a0b8f2072f",
+   "tag": "Tehran, file photo"
+  },
+  {
+   "type": "stat",
+   "big": "3 Nov",
+   "small": "US midterms; Trump says new strikes would wait until after"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "IRN",
+    "SAU",
+    "ARE",
+    "QAT",
+    "KWT",
+    "BHR",
+    "OMN"
+   ],
+   "pin": [
+    27.0,
+    51.5
+   ],
+   "label": "Persian Gulf",
+   "span": 22,
+   "span_start": 60
+  },
+  {
+   "type": "stat",
+   "big": "$117",
+   "small": "Brent crude per barrel on Friday, highest since March",
+   "src": "https://images.unsplash.com/photo-1642285709726-f9eb035b034b"
+  },
+  {
+   "type": "stat",
+   "big": "<$97",
+   "small": "Brent at the start of October"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "JOR",
+    "LBN",
+    "QAT",
+    "ARE"
+   ],
+   "pin": [
+    31.95,
+    35.93
+   ],
+   "label": "US embassies",
+   "span": 30,
+   "span_start": 60
+  },
+  {
+   "type": "map",
+   "countries": [
+    "PAK",
+    "IRN"
+   ],
+   "pin": [
+    33.69,
+    73.04
+   ],
+   "label": "Islamabad",
+   "span": 24,
+   "span_start": 60
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1613881348993-bc547b53daba",
+   "tag": "Tehran, file photo"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "PAK"
+   ],
+   "pin": [
+    24.86,
+    67.01
+   ],
+   "label": "Karachi",
+   "span": 14,
+   "span_start": 40
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-25-18-iran-year.jpg"
+  }
+ ]
+}
