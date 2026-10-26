@@ -1,0 +1,101 @@
+{
+ "kicker": "Sport",
+ "title": "Shadab Khan's one-wicket thriller",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Photos: Unsplash (Lahore, file) · Map: Natural Earth",
+ "lines": [
+  "Pakistan have beaten England by one wicket, in one of the most dramatic finishes of the year.",
+  "It was the fourth match of the ODI tri-series, played in Lahore on Sunday evening.",
+  "England batted first and were bowled out for two hundred and forty-one, in forty-six point four overs.",
+  "Pakistan's chase looked to be slipping away, as wickets kept falling.",
+  "Then Shadab Khan took charge, and hit a superb century.",
+  "With nine wickets down, he and fast bowler Haris Rauf put together the final partnership.",
+  "Pakistan reached the target in forty-seven point one overs, with just one wicket in hand.",
+  "ESPNcricinfo called it a sensational one-wicket thriller.",
+  "President Zardari praised the team's determination, and Prime Minister Shehbaz Sharif hailed their grit and fighting spirit.",
+  "The Prime Minister said the Lahore crowd's support represented the whole nation.",
+  "The tri-series also includes Sri Lanka, and Pakistan earlier beat both Sri Lanka and England in their opening matches.",
+  "Follow Maps and Musings, for Pakistan's biggest stories, explained."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "PAK",
+    "GBR"
+   ],
+   "pin": [
+    31.51,
+    74.33
+   ],
+   "label": "Lahore",
+   "span": 16,
+   "span_start": 90
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1653673662935-ae19b645096f",
+   "tag": "Lahore, file photo"
+  },
+  {
+   "type": "stat",
+   "big": "241",
+   "small": "England all out in 46.4 overs"
+  },
+  {
+   "type": "stat",
+   "big": "Wickets falling",
+   "small": "Pakistan's chase in trouble"
+  },
+  {
+   "type": "stat",
+   "big": "100",
+   "small": "Shadab Khan's match-winning century"
+  },
+  {
+   "type": "stat",
+   "big": "Last wicket",
+   "small": "Shadab Khan and Haris Rauf finish the job"
+  },
+  {
+   "type": "stat",
+   "big": "242/9",
+   "small": "Pakistan win in 47.1 overs, by one wicket"
+  },
+  {
+   "type": "stat",
+   "big": "Sensational",
+   "small": "ESPNcricinfo's verdict"
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1614253070729-56057a3ca5f2",
+   "tag": "Lahore, file photo"
+  },
+  {
+   "type": "stat",
+   "big": "Whole nation",
+   "small": "PM Shehbaz Sharif on the Lahore crowd"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "PAK",
+    "GBR",
+    "LKA"
+   ],
+   "pin": [
+    33.6,
+    73.07
+   ],
+   "label": "Tri-series",
+   "span": 50,
+   "span_start": 90
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-26-20-shadab-thriller.jpg"
+  }
+ ]
+}

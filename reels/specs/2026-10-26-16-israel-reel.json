@@ -1,0 +1,110 @@
+{
+ "kicker": "World",
+ "title": "Israel votes: a referendum on Netanyahu?",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Map: Natural Earth",
+ "lines": [
+  "Israelis go to the polls on Tuesday, the twenty-seventh of October, in an election widely seen as a referendum on Benjamin Netanyahu.",
+  "All one hundred and twenty seats in the Knesset, Israel's parliament, are up for grabs.",
+  "A government needs at least sixty-one seats, and no single party has ever won that many alone.",
+  "According to polls cited by Al Jazeera, the opposition bloc is projected at about fifty-two seats.",
+  "Netanyahu's religious-nationalist alliance is projected at about fifty.",
+  "The main challengers include former army chief Gadi Eisenkot, and an alliance led by Naftali Bennett and Yair Lapid.",
+  "Arab-led parties, projected at around thirteen seats combined, could decide who governs.",
+  "Netanyahu has warned that Iran or its proxies could attack to disrupt the vote, saying the army is ready both to defend and to strike.",
+  "The election comes eight months into the war with Iran, which began in February.",
+  "Possible outcomes range from another Netanyahu government, to an opposition coalition, or even another election.",
+  "Whoever wins will shape the region's path on Iran, Gaza and Lebanon.",
+  "Follow Maps and Musings, for the world's biggest stories, explained."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "ISR"
+   ],
+   "pin": [
+    31.77,
+    35.21
+   ],
+   "label": "Jerusalem",
+   "span": 10,
+   "span_start": 70
+  },
+  {
+   "type": "stat",
+   "big": "120",
+   "small": "Seats in the Knesset"
+  },
+  {
+   "type": "stat",
+   "big": "61",
+   "small": "Seats needed for a majority"
+  },
+  {
+   "type": "stat",
+   "big": "~52",
+   "small": "Projected seats for the opposition bloc"
+  },
+  {
+   "type": "stat",
+   "big": "~50",
+   "small": "Projected seats for Netanyahu's alliance"
+  },
+  {
+   "type": "stat",
+   "big": "Eisenkot · Bennett · Lapid",
+   "small": "Leading opposition figures"
+  },
+  {
+   "type": "stat",
+   "big": "~13",
+   "small": "Projected seats for Arab-led parties combined"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "ISR",
+    "IRN"
+   ],
+   "pin": [
+    35.69,
+    51.39
+   ],
+   "label": "Iran",
+   "span": 30,
+   "span_start": 70
+  },
+  {
+   "type": "stat",
+   "big": "8 months",
+   "small": "Since the war with Iran began in February"
+  },
+  {
+   "type": "stat",
+   "big": "8 scenarios",
+   "small": "From a new Netanyahu term to another election"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "ISR",
+    "PSE",
+    "LBN",
+    "IRN"
+   ],
+   "pin": [
+    31.5,
+    34.45
+   ],
+   "label": "Gaza",
+   "span": 14,
+   "span_start": 40
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-26-16-israel-vote.jpg"
+  }
+ ]
+}

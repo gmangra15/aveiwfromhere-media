@@ -1,0 +1,80 @@
+{
+ "kicker": "Culture",
+ "title": "Fly to Shandur, the world's highest polo ground",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "3D terrain: AWS Terrain Tiles \u00b7 Imagery: Sentinel-2 cloudless 2016 by EOX (CC BY 4.0) \u00b7 Map: Natural Earth",
+ "lines": [
+  "High in the Hindu Kush and Karakoram, between Chitral and Gilgit-Baltistan, lies the Shandur Pass.",
+  "Let's fly up from the Laspur valley, on the Chitral side.",
+  "The road climbs to a wide, open plateau, about three thousand seven hundred metres above sea level.",
+  "Here lies Shandur Lake, and beside it, a flat meadow that hosts the highest polo ground in the world.",
+  "Every summer, thousands of visitors come here for the Shandur Polo Festival, a tradition that dates back to nineteen thirty-six.",
+  "Teams from Chitral and Gilgit-Baltistan face each other in one of the fiercest rivalries in sport.",
+  "They play freestyle mountain polo, one of the oldest surviving forms of the game, with very few rules.",
+  "This year, Gilgit-Baltistan beat Chitral six-five in the final, their first title in more than a decade.",
+  "The festival also brings folk music, traditional dances, local food and handicrafts to the top of the pass.",
+  "Polo is often called the game of kings, but at Shandur it belongs to the mountain communities.",
+  "This year's festival was held in June, in the short summer season, when the pass is easiest to reach.",
+  "Follow Maps and Musings, and explore Pakistan's most beautiful places with us."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "PAK"
+   ],
+   "pin": [
+    36.08,
+    72.54
+   ],
+   "label": "Shandur Pass",
+   "span": 10,
+   "span_start": 60
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/shandur.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/shandur.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/shandur.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/shandur.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/shandur.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/shandur.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/shandur.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/shandur.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/shandur.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/shandur.json"
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-27-08-shandur.jpg"
+  }
+ ]
+}

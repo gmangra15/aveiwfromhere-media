@@ -1,0 +1,119 @@
+{
+ "kicker": "Pakistan",
+ "title": "Pakistan, Saudi Arabia and Türkiye in Tehran",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Photos: Unsplash (Tehran, file) · Map: Natural Earth",
+ "lines": [
+  "High-level delegations from Pakistan, Saudi Arabia and Türkiye are in Tehran, trying to stop a new war.",
+  "Pakistan's army chief, Field Marshal Asim Munir, is there, along with Saudi Defence Minister Khalid bin Salman.",
+  "Türkiye has sent the head of its intelligence service.",
+  "According to the Associated Press, they are meeting Iran's top security officials and negotiators, to push for a deal between Tehran and Washington.",
+  "Houthi attacks on Saudi Arabia, from Yemen, are also on the agenda.",
+  "Saudi Arabia says the aim is to find ways to de-escalate tensions and strengthen regional security.",
+  "Iran's foreign ministry says the window of diplomacy has not closed, and messages are being passed to the US through intermediaries.",
+  "But it says no Iranian will accept America's demand for complete surrender.",
+  "In Israel, Prime Minister Netanyahu says the army is ready both to defend and to strike.",
+  "The visit comes days after Pakistan, Türkiye, Saudi Arabia and Egypt backed the Pakistan-brokered Islamabad MoU between Iran and the US.",
+  "With Israel voting on Tuesday and the US on the third of November, the coming days are critical.",
+  "Follow Maps and Musings, for Pakistan and the world, explained."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "PAK",
+    "SAU",
+    "TUR",
+    "IRN"
+   ],
+   "pin": [
+    35.69,
+    51.39
+   ],
+   "label": "Tehran",
+   "span": 40,
+   "span_start": 110
+  },
+  {
+   "type": "stat",
+   "big": "3 nations",
+   "small": "Pakistan · Saudi Arabia · Türkiye"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "TUR"
+   ],
+   "pin": [
+    39.93,
+    32.85
+   ],
+   "label": "Ankara",
+   "span": 20,
+   "span_start": 50
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1579878235007-a5a0b8f2072f",
+   "tag": "Tehran, file photo"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "YEM",
+    "SAU"
+   ],
+   "pin": [
+    15.37,
+    44.19
+   ],
+   "label": "Yemen",
+   "span": 22,
+   "span_start": 50
+  },
+  {
+   "type": "stat",
+   "big": "De-escalate",
+   "small": "Saudi Arabia's stated aim for the visit"
+  },
+  {
+   "type": "stat",
+   "big": "“Not closed”",
+   "small": "Iran on the window of diplomacy"
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1613881348993-bc547b53daba",
+   "tag": "Tehran, file photo"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "ISR",
+    "IRN"
+   ],
+   "pin": [
+    31.77,
+    35.21
+   ],
+   "label": "Israel",
+   "span": 24,
+   "span_start": 60
+  },
+  {
+   "type": "stat",
+   "big": "Islamabad MoU",
+   "small": "Backed by the R4 in Istanbul last week"
+  },
+  {
+   "type": "stat",
+   "big": "27 Oct · 3 Nov",
+   "small": "Israel's election, then the US midterms"
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-26-18-tehran-delegations.jpg"
+  }
+ ]
+}

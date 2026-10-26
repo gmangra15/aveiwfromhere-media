@@ -1,0 +1,117 @@
+{
+ "kicker": "War",
+ "title": "Riyadh airport reopens under Houthi threat",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Photos: Wolfgang Hasselmann / Unsplash · Map: Natural Earth",
+ "lines": [
+  "Saudi Arabia has partly reopened Riyadh's main airport, despite fresh threats from Yemen's Houthis.",
+  "King Khalid International Airport had been closed since the tenth of October.",
+  "An attack that day, claimed by the Houthis, reportedly killed thirteen people and injured more than three hundred.",
+  "On Sunday, Terminal One reopened for domestic flights, and Terminal Two for international flights by Saudi airlines.",
+  "Hours earlier, Houthi spokesman Yahya Saree warned airlines and passengers that the airport was a military target, and unsafe.",
+  "The Houthis say they fired missiles at the airport, an air base in Khamis Mushait, and a naval base in Jazan.",
+  "The Saudi-led coalition says it intercepted twelve missiles and two drones.",
+  "Falling debris injured two people in the south of the kingdom, according to civil defence.",
+  "The Houthis say their attacks respond to Saudi strikes on Sanaa and other areas, which they say killed or wounded dozens.",
+  "The fighting has broken a UN-brokered truce that had largely held since twenty twenty-two.",
+  "Hundreds of thousands of Pakistanis live and work in Saudi Arabia, and many fly through Riyadh.",
+  "Follow Maps and Musings, for the world's biggest stories, explained."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "SAU",
+    "YEM"
+   ],
+   "pin": [
+    24.96,
+    46.7
+   ],
+   "label": "Riyadh airport",
+   "span": 22,
+   "span_start": 90
+  },
+  {
+   "type": "stat",
+   "big": "10 Oct",
+   "small": "Airport closed after a deadly attack"
+  },
+  {
+   "type": "stat",
+   "big": "13 killed",
+   "small": "Reported toll in the 10 October attack"
+  },
+  {
+   "type": "stat",
+   "big": "T1 + T2",
+   "small": "Domestic and Saudi-airline international flights resume"
+  },
+  {
+   "type": "stat",
+   "big": "“Military target”",
+   "small": "Houthi warning to airlines and passengers"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "SAU",
+    "YEM"
+   ],
+   "pin": [
+    18.3,
+    42.73
+   ],
+   "label": "Khamis Mushait",
+   "span": 14,
+   "span_start": 40
+  },
+  {
+   "type": "stat",
+   "big": "12 + 2",
+   "small": "Missiles and drones intercepted, says the coalition"
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1542401886-65d6c61db217",
+   "tag": "File photo"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "YEM"
+   ],
+   "pin": [
+    15.37,
+    44.19
+   ],
+   "label": "Sanaa",
+   "span": 14,
+   "span_start": 40
+  },
+  {
+   "type": "stat",
+   "big": "Since 2022",
+   "small": "UN-brokered truce now broken"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "PAK",
+    "SAU"
+   ],
+   "pin": [
+    24.96,
+    46.7
+   ],
+   "label": "Riyadh",
+   "span": 40,
+   "span_start": 80
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-27-10-riyadh-airport.jpg"
+  }
+ ]
+}

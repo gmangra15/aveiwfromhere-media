@@ -1,0 +1,111 @@
+{
+ "kicker": "World",
+ "title": "Deadly attack on a church in Jordan",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Map: Natural Earth",
+ "lines": [
+  "Jordan is in mourning, after a rare and deadly attack on a church.",
+  "On Friday, gunmen opened fire during a funeral at Saint George's Greek Orthodox Church, in the village of Hamoud, in Karak governorate.",
+  "Karak is about one hundred and twenty kilometres south-west of the capital, Amman.",
+  "The attackers fired for several minutes, in daylight. Nine people were killed, and around forty were wounded.",
+  "Jordanian authorities called it an act of extremist terrorism.",
+  "No group has claimed responsibility, and officials say it is too early to know whether the attackers had links to known groups.",
+  "King Abdullah visited Karak hours later, and said those responsible would be punished with an iron fist.",
+  "Jordan declared three days of national mourning, and security was stepped up at malls and embassies.",
+  "Prime Minister Jafar Hassan blamed terrorist ideology and blind extremism.",
+  "Attacks like this are very rare in Jordan, where Christians are a small but long-established minority.",
+  "Many officials in Jordan have condemned the attack.",
+  "Follow Maps and Musings, for the world's biggest stories, explained."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "JOR"
+   ],
+   "pin": [
+    31.18,
+    35.7
+   ],
+   "label": "Karak",
+   "span": 10,
+   "span_start": 60
+  },
+  {
+   "type": "stat",
+   "big": "Friday",
+   "small": "Gunmen open fire at a church funeral"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "JOR"
+   ],
+   "pin": [
+    31.95,
+    35.93
+   ],
+   "label": "Amman",
+   "span": 8,
+   "span_start": 30
+  },
+  {
+   "type": "stat",
+   "big": "9 killed",
+   "small": "About 40 wounded"
+  },
+  {
+   "type": "stat",
+   "big": "Terrorism",
+   "small": "How Jordanian authorities described the attack"
+  },
+  {
+   "type": "stat",
+   "big": "No claim",
+   "small": "Of responsibility so far"
+  },
+  {
+   "type": "stat",
+   "big": "“Iron fist”",
+   "small": "King Abdullah's promise"
+  },
+  {
+   "type": "stat",
+   "big": "3 days",
+   "small": "Of national mourning"
+  },
+  {
+   "type": "stat",
+   "big": "Extremism",
+   "small": "Blamed by PM Jafar Hassan"
+  },
+  {
+   "type": "stat",
+   "big": "Rare",
+   "small": "Attacks of this kind in Jordan"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "JOR",
+    "SAU",
+    "ISR",
+    "SYR",
+    "IRQ",
+    "EGY"
+   ],
+   "pin": [
+    31.95,
+    35.93
+   ],
+   "label": "Jordan",
+   "span": 30,
+   "span_start": 60
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-26-22-jordan-church.jpg"
+  }
+ ]
+}

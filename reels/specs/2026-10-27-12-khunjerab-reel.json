@@ -1,0 +1,81 @@
+{
+ "kicker": "Nature",
+ "title": "Fly to Khunjerab, the roof of the Karakoram Highway",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "3D terrain: AWS Terrain Tiles \u00b7 Imagery: Sentinel-2 cloudless 2016 by EOX (CC BY 4.0) \u00b7 Map: Natural Earth",
+ "lines": [
+  "At the far northern tip of Pakistan, on the border with China, lies the Khunjerab Pass.",
+  "Let's fly up the valley from the Pakistani side, along the Karakoram Highway.",
+  "The road climbs through the Khunjerab National Park, set up in nineteen seventy-nine.",
+  "The park was created to protect rare animals like the Marco Polo sheep, the snow leopard and the blue sheep.",
+  "And there it is: the Khunjerab Pass, at nearly four thousand seven hundred metres.",
+  "It is often described as the highest paved international border crossing in the world.",
+  "The road over the pass was fully paved in nineteen eighty-two, as part of the Karakoram Highway.",
+  "Across the border is China's Xinjiang region. Kashgar is about four hundred and eighteen kilometres away.",
+  "At the border, traffic switches sides: Pakistanis drive on the left, Chinese drivers on the right.",
+  "Heavy snow closes the road to most traffic for several months each winter.",
+  "The pass is a symbol of Pakistan-China friendship, and a vital trade link between the two countries.",
+  "Follow Maps and Musings, and explore Pakistan's most beautiful places with us."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "PAK",
+    "CHN"
+   ],
+   "pin": [
+    36.85,
+    75.43
+   ],
+   "label": "Khunjerab Pass",
+   "span": 12,
+   "span_start": 70
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/khunjerab.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/khunjerab.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/khunjerab.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/khunjerab.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/khunjerab.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/khunjerab.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/khunjerab.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/khunjerab.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/khunjerab.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/khunjerab.json"
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-27-12-khunjerab.jpg"
+  }
+ ]
+}
