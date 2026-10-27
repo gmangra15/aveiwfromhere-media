@@ -1,0 +1,93 @@
+{
+ "kicker": "Economy",
+ "title": "Why the State Bank just raised interest rates",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Photos: Shujaat Muzaffar, Muhammad Amir / Unsplash · Map: Natural Earth",
+ "lines": [
+  "The State Bank of Pakistan has raised its key interest rate for the first time since June.",
+  "The policy rate goes up by half a percentage point, to twelve percent.",
+  "Nine of the ten members of the Monetary Policy Committee voted for the rise.",
+  "The reason is inflation. Prices rose ten point three percent in September, well above the State Bank's target of five to seven percent.",
+  "The committee says the war in the Middle East and higher energy costs have worsened the inflation outlook.",
+  "It also pointed to problems with wheat supplies at home.",
+  "The State Bank says the rise is needed to keep inflation expectations anchored, and to stop the energy shock spreading to other prices.",
+  "It expects the economy to grow between three and a half and four and a half percent this fiscal year.",
+  "Foreign reserves at the State Bank are about twenty-one and a half billion dollars, around three months of imports.",
+  "Businesses are divided. Foreign investors back the move, but industry warns that dearer loans will hurt exports and growth.",
+  "For ordinary Pakistanis, higher rates mean costlier loans, but better returns on savings.",
+  "Follow Maps and Musings, for Pakistan's economy, explained."
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1642709441467-6816f4dec4af",
+   "tag": "Karachi, file photo"
+  },
+  {
+   "type": "stat",
+   "big": "12%",
+   "small": "New policy rate, up 0.5 percentage points"
+  },
+  {
+   "type": "stat",
+   "big": "9 of 10",
+   "small": "Committee members who backed the rise"
+  },
+  {
+   "type": "stat",
+   "big": "10.3%",
+   "small": "Inflation in September; target 5–7%"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "IRN",
+    "SAU",
+    "ISR",
+    "PAK"
+   ],
+   "pin": [
+    27.0,
+    52.0
+   ],
+   "label": "Middle East war",
+   "span": 40,
+   "span_start": 80
+  },
+  {
+   "type": "stat",
+   "big": "Wheat",
+   "small": "Supply problems also cited"
+  },
+  {
+   "type": "stat",
+   "big": "Anchor",
+   "small": "Keeping inflation expectations under control"
+  },
+  {
+   "type": "stat",
+   "big": "3.5–4.5%",
+   "small": "Expected GDP growth in FY27"
+  },
+  {
+   "type": "stat",
+   "big": "$21.5bn",
+   "small": "SBP reserves, about 3 months of imports"
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1721988277528-06a27beb1811",
+   "tag": "Karachi, file photo"
+  },
+  {
+   "type": "stat",
+   "big": "Loans ↑ Savings ↑",
+   "small": "What higher rates mean for households"
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-27-16-sbp-rate.jpg"
+  }
+ ]
+}

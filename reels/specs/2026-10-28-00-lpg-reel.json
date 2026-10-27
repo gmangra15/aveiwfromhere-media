@@ -1,0 +1,119 @@
+{
+ "kicker": "Pakistan",
+ "title": "Why cooking gas has become so expensive",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Map: Natural Earth",
+ "lines": [
+  "Cooking gas has become a luxury in parts of Pakistan, just as winter arrives.",
+  "The official price of LPG is two hundred and eighty rupees a kilo.",
+  "But in remote northern areas, it is reportedly selling for seven hundred to eight hundred rupees a kilo, according to Dawn.",
+  "Traders told Profit that a twelve-kilo cylinder jumped from about four thousand five hundred to seven thousand rupees within days.",
+  "Petroleum Minister Ali Pervaiz Malik told the National Assembly that the closure of the Pakistan-Iran border is a major reason.",
+  "He said fifty to sixty percent of Pakistan's LPG came from Iran, and the rest from Qatar, whose supply is suspended because of the war.",
+  "The Gabd-Rimdan and Taftan crossings were closed on the seventeenth of October, citing security and anti-smuggling concerns.",
+  "Hundreds of trucks, including LPG tankers, have been stranded on both sides.",
+  "LPG matters most in areas without piped gas, where families use it to cook and keep warm.",
+  "The minister says the government is reviewing the system, and looking to bring gas in by sea from other countries.",
+  "Until then, many households face a cold and costly winter.",
+  "Follow Maps and Musings, for Pakistan's biggest stories, explained."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "PAK"
+   ],
+   "pin": [
+    30.0,
+    69.5
+   ],
+   "label": "Pakistan",
+   "span": 22,
+   "span_start": 70
+  },
+  {
+   "type": "stat",
+   "big": "Rs280/kg",
+   "small": "Official LPG price"
+  },
+  {
+   "type": "stat",
+   "big": "Rs700–800/kg",
+   "small": "Reported price in remote northern areas"
+  },
+  {
+   "type": "stat",
+   "big": "Rs4,500 → Rs7,000",
+   "small": "12-kg cylinder, within days, say traders"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "PAK",
+    "IRN"
+   ],
+   "pin": [
+    33.69,
+    73.04
+   ],
+   "label": "National Assembly",
+   "span": 12,
+   "span_start": 40
+  },
+  {
+   "type": "stat",
+   "big": "50–60%",
+   "small": "Share of Pakistan's LPG that came from Iran"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "PAK",
+    "IRN"
+   ],
+   "pin": [
+    25.17,
+    61.67
+   ],
+   "label": "Gabd-Rimdan",
+   "span": 10,
+   "span_start": 40
+  },
+  {
+   "type": "stat",
+   "big": "Hundreds",
+   "small": "Of trucks stranded, including LPG tankers"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "PAK",
+    "CHN",
+    "IND",
+    "AFG"
+   ],
+   "pin": [
+    35.9,
+    74.3
+   ],
+   "label": "Northern areas",
+   "span": 14,
+   "span_start": 40
+  },
+  {
+   "type": "stat",
+   "big": "By sea",
+   "small": "Government plans new import routes"
+  },
+  {
+   "type": "stat",
+   "big": "Winter",
+   "small": "Demand rises as temperatures fall"
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-28-00-lpg-crisis.jpg"
+  }
+ ]
+}

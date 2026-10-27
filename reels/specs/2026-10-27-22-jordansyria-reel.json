@@ -1,0 +1,120 @@
+{
+ "kicker": "War",
+ "title": "Jordan strikes Syria after the church attack",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Map: Natural Earth",
+ "lines": [
+  "Jordan has launched air strikes inside Syria, days after a deadly attack on a church in Karak.",
+  "The attack on a funeral at a Greek Orthodox church killed at least nine people.",
+  "On Monday evening, Jordan's armed forces said they struck hideouts of armed groups in southern Syria.",
+  "Syrian civil defence says at least four sites were hit, in Deraa and Suweyda provinces.",
+  "It says seven people were killed, including a woman and three children from one family, in a tent at Al-Tai.",
+  "Jordan said the strikes were coordinated with the Syrian government.",
+  "But Syria denies this. It called the operation a treacherous attack, carried out without notice, and opened an investigation.",
+  "Syria has also closed the Nassib crossing, its only passenger and cargo crossing with Jordan.",
+  "In Jordan, security forces arrested three suspects in connection with the church attack, after a three-hour shootout.",
+  "King Abdullah has promised the harshest penalties for those responsible.",
+  "The strikes add a new front of tension, in a region already shaken by the war with Iran.",
+  "Follow Maps and Musings, for the world's biggest stories, explained."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "JOR",
+    "SYR"
+   ],
+   "pin": [
+    32.6,
+    36.1
+   ],
+   "label": "Jordan–Syria border",
+   "span": 10,
+   "span_start": 60
+  },
+  {
+   "type": "stat",
+   "big": "9 killed",
+   "small": "In the attack on the church funeral in Karak"
+  },
+  {
+   "type": "stat",
+   "big": "Hideouts",
+   "small": "Jordan's description of its targets"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "SYR"
+   ],
+   "pin": [
+    32.62,
+    36.1
+   ],
+   "label": "Deraa",
+   "span": 6,
+   "span_start": 30
+  },
+  {
+   "type": "stat",
+   "big": "7 killed",
+   "small": "Including 3 children, says Syrian civil defence"
+  },
+  {
+   "type": "stat",
+   "big": "“Coordinated”",
+   "small": "Jordan's claim"
+  },
+  {
+   "type": "stat",
+   "big": "“Treacherous”",
+   "small": "Syria's response; it denies coordination"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "JOR",
+    "SYR"
+   ],
+   "pin": [
+    32.5,
+    36.2
+   ],
+   "label": "Nassib crossing",
+   "span": 6,
+   "span_start": 30
+  },
+  {
+   "type": "stat",
+   "big": "3 arrested",
+   "small": "Suspects in the church attack"
+  },
+  {
+   "type": "stat",
+   "big": "Harshest penalties",
+   "small": "King Abdullah's promise"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "JOR",
+    "SYR",
+    "IRQ",
+    "ISR",
+    "IRN"
+   ],
+   "pin": [
+    32.0,
+    38.0
+   ],
+   "label": "Region",
+   "span": 30,
+   "span_start": 60
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-27-22-jordan-syria.jpg"
+  }
+ ]
+}

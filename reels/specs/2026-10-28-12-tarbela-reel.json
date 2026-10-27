@@ -1,0 +1,80 @@
+{
+ "kicker": "Pakistan",
+ "title": "Fly over Tarbela, the giant on the Indus",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "3D terrain: AWS Terrain Tiles \u00b7 Imagery: Sentinel-2 cloudless 2016 by EOX (CC BY 4.0) \u00b7 Map: Natural Earth",
+ "lines": [
+  "On the Indus River, about one hundred and thirty kilometres north-west of Islamabad, stands one of the largest dams on Earth.",
+  "Let's fly up the Indus, towards Tarbela.",
+  "The river here flows out of the dam's spillways and power tunnels, on its way south across Pakistan.",
+  "And there it is: Tarbela Dam, completed in nineteen seventy-six, as part of the Indus Basin Project.",
+  "It is one of the world's largest earth- and rock-filled dams. Its crest stretches about two point seven kilometres.",
+  "Its main wall rises more than one hundred and forty metres above the riverbed.",
+  "Behind it lies Tarbela Lake, about eighty-one kilometres long, covering some two hundred and fifty-nine square kilometres.",
+  "The reservoir stores Indus water for Pakistan's farms, which depend on the river to grow wheat, cotton and rice.",
+  "Its power station has fourteen generating units, built in stages through tunnels in the dam, and more are being added.",
+  "Let's climb higher, and look back at the whole reservoir, with the dam far below.",
+  "For Pakistan, Tarbela is both a water bank and a powerhouse, and a symbol of how much the country depends on the Indus.",
+  "Follow Maps and Musings, and explore Pakistan's landmarks with us."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "PAK"
+   ],
+   "pin": [
+    34.08,
+    72.7
+   ],
+   "label": "Tarbela Dam",
+   "span": 10,
+   "span_start": 60
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/tarbela.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/tarbela.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/tarbela.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/tarbela.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/tarbela.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/tarbela.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/tarbela.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/tarbela.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/tarbela.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/tarbela.json"
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-28-12-tarbela.jpg"
+  }
+ ]
+}

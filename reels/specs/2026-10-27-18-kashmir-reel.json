@@ -1,0 +1,117 @@
+{
+ "kicker": "Pakistan",
+ "title": "Why Pakistan marks October 27 as Black Day",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Map: Natural Earth",
+ "lines": [
+  "Every year on the twenty-seventh of October, Pakistan observes Kashmir Black Day.",
+  "It marks the arrival of Indian forces in Srinagar in nineteen forty-seven. This year is the seventy-ninth anniversary.",
+  "Prime Minister Shehbaz Sharif called it the start of a tragic chapter in the history of Jammu and Kashmir.",
+  "He said Pakistan's position on Kashmir remains clear, consistent and principled.",
+  "President Asif Ali Zardari called for sustained international attention to the situation in the region.",
+  "Foreign Minister Ishaq Dar said India's measures of the fifth of August, twenty nineteen, could not change the region's disputed status.",
+  "He said the dispute cannot be resolved through unilateral actions or the use of force.",
+  "The National Assembly unanimously passed a resolution reaffirming Pakistan's moral, political and diplomatic support for Kashmiris.",
+  "Pakistan points to United Nations resolutions that call for a plebiscite to decide Kashmir's future.",
+  "India rejects Pakistan's position, and considers Jammu and Kashmir an integral part of its territory.",
+  "The dispute remains one of the oldest unresolved conflicts in the world, between two nuclear-armed neighbours.",
+  "Follow Maps and Musings, for Pakistan and the region, explained."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "PAK",
+    "IND"
+   ],
+   "pin": [
+    34.08,
+    74.8
+   ],
+   "label": "Srinagar",
+   "span": 14,
+   "span_start": 70
+  },
+  {
+   "type": "stat",
+   "big": "1947",
+   "small": "Indian forces arrive in Srinagar"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "PAK"
+   ],
+   "pin": [
+    33.69,
+    73.04
+   ],
+   "label": "Islamabad",
+   "span": 12,
+   "span_start": 40
+  },
+  {
+   "type": "stat",
+   "big": "“Principled”",
+   "small": "PM Shehbaz Sharif on Pakistan's position"
+  },
+  {
+   "type": "stat",
+   "big": "International attention",
+   "small": "President Zardari's call"
+  },
+  {
+   "type": "stat",
+   "big": "5 Aug 2019",
+   "small": "India's measures, rejected by Pakistan"
+  },
+  {
+   "type": "stat",
+   "big": "No unilateral solution",
+   "small": "Foreign Minister Ishaq Dar"
+  },
+  {
+   "type": "stat",
+   "big": "Unanimous",
+   "small": "National Assembly resolution"
+  },
+  {
+   "type": "stat",
+   "big": "UN resolutions",
+   "small": "Cited by Pakistan"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "IND"
+   ],
+   "pin": [
+    28.61,
+    77.21
+   ],
+   "label": "New Delhi",
+   "span": 20,
+   "span_start": 50
+  },
+  {
+   "type": "map",
+   "countries": [
+    "PAK",
+    "IND",
+    "CHN"
+   ],
+   "pin": [
+    34.5,
+    75.5
+   ],
+   "label": "Kashmir",
+   "span": 20,
+   "span_start": 50
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-27-18-kashmir-black-day.jpg"
+  }
+ ]
+}

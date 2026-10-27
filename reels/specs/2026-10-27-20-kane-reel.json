@@ -1,0 +1,99 @@
+{
+ "kicker": "Sport",
+ "title": "Harry Kane wins the Ballon d'Or",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Map: Natural Earth",
+ "lines": [
+  "Harry Kane has won the Ballon d'Or, football's most famous individual award.",
+  "The Bayern Munich striker is the first English winner in twenty-five years, since Michael Owen in two thousand and one.",
+  "He is the fifth Englishman ever to win it.",
+  "Kane scored seventy-three goals for club and country last season.",
+  "Kylian Mbappé finished second, and Lamine Yamal third.",
+  "Yamal did win the Young Talent award.",
+  "The ceremony was held in London, and the trophy was presented by Cristiano Ronaldo.",
+  "In the women's game, Spain's Alexia Putellas won the Ballon d'Or for a third time.",
+  "Paris Saint-Germain were named men's club of the year, and Barcelona women's club of the year.",
+  "Embarrassingly, hours before the ceremony, the Ballon d'Or website briefly published articles naming three different winners.",
+  "For England fans, it's the end of a twenty-five-year wait.",
+  "Follow Maps and Musings, for the world's biggest stories, explained."
+ ],
+ "scenes": [
+  {
+   "type": "stat",
+   "big": "Ballon d'Or",
+   "small": "2026 winner: Harry Kane"
+  },
+  {
+   "type": "stat",
+   "big": "25 years",
+   "small": "Since the last English winner, Michael Owen in 2001"
+  },
+  {
+   "type": "stat",
+   "big": "5th",
+   "small": "English winner ever"
+  },
+  {
+   "type": "stat",
+   "big": "73",
+   "small": "Goals for club and country last season"
+  },
+  {
+   "type": "stat",
+   "big": "2nd · 3rd",
+   "small": "Kylian Mbappé · Lamine Yamal"
+  },
+  {
+   "type": "stat",
+   "big": "Young Talent",
+   "small": "Lamine Yamal"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "GBR"
+   ],
+   "pin": [
+    51.51,
+    -0.13
+   ],
+   "label": "London",
+   "span": 10,
+   "span_start": 40
+  },
+  {
+   "type": "stat",
+   "big": "3rd win",
+   "small": "Alexia Putellas, women's Ballon d'Or"
+  },
+  {
+   "type": "stat",
+   "big": "PSG · Barcelona",
+   "small": "Men's and women's clubs of the year"
+  },
+  {
+   "type": "stat",
+   "big": "Leak",
+   "small": "Website briefly named three different winners"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "GBR",
+    "DEU"
+   ],
+   "pin": [
+    48.14,
+    11.58
+   ],
+   "label": "Munich",
+   "span": 16,
+   "span_start": 40
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-27-20-kane-ballon.jpg"
+  }
+ ]
+}

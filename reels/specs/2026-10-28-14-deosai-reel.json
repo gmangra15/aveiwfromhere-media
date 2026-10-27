@@ -1,0 +1,80 @@
+{
+ "kicker": "Nature",
+ "title": "Fly over Deosai, the land of giants and bears",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "3D terrain: AWS Terrain Tiles \u00b7 Imagery: Sentinel-2 cloudless 2016 by EOX (CC BY 4.0) \u00b7 Map: Natural Earth",
+ "lines": [
+  "High in Gilgit-Baltistan, between Skardu and Astore, lies one of the highest plateaus in the world: Deosai.",
+  "Let's fly in from the west, at around four thousand metres above sea level.",
+  "Below us is Sheosar Lake, at the edge of the plains.",
+  "Locals tell of a giant who once lived here. Deosai is said to mean the land of the giant.",
+  "In the Balti language, it is called Ghab-i-Yarsa, the place of summer.",
+  "The plains became a national park in nineteen ninety-three, mainly to protect the Himalayan brown bear.",
+  "In nineteen ninety-three, only nineteen bears were counted here. A twenty twenty-two survey estimated about sixty-six.",
+  "Deosai has the largest brown bear population in Pakistan, but the animals still face poaching and habitat loss.",
+  "Tourism brings new pressure. Researchers have found plastic and food packaging in bear droppings.",
+  "In summer, Gujjar and Bakarwal herders bring their cattle up to the plateau to graze.",
+  "The twenty twenty-two survey also counted twelve campsites, sixty-six tents and nearly five thousand livestock inside the park.",
+  "Follow Maps and Musings, and explore Pakistan's most beautiful places with us."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "PAK"
+   ],
+   "pin": [
+    35.02,
+    75.35
+   ],
+   "label": "Deosai",
+   "span": 10,
+   "span_start": 60
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/deosai.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/deosai.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/deosai.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/deosai.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/deosai.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/deosai.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/deosai.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/deosai.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/deosai.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/deosai.json"
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-28-14-deosai.jpg"
+  }
+ ]
+}
