@@ -1,0 +1,98 @@
+{
+ "kicker": "World",
+ "title": "Israel votes today: who is ahead?",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Map: Natural Earth",
+ "lines": [
+  "Israel is voting today, in its first election since the war with Iran began.",
+  "About seven point three million people are eligible to vote, including around one point two million Palestinian citizens of Israel.",
+  "There are more than twelve thousand polling stations, open from seven in the morning to ten at night, Israel time.",
+  "Thirty-seven parties are running, but a party needs at least three point two five percent of the vote to enter the Knesset.",
+  "In the final polls, former army chief Gadi Eisenkot's Yashar party was narrowly ahead, with twenty-two to twenty-three seats.",
+  "Benjamin Netanyahu's Likud was projected at nineteen to twenty-one.",
+  "Netanyahu's right-wing and religious bloc was projected at about fifty seats, and the opposition at fifty-two to fifty-six. Neither reaches the sixty-one needed.",
+  "That means Palestinian-led parties, projected at fourteen to sixteen seats, could hold the balance.",
+  "President Isaac Herzog, voting in Jerusalem, said no one can be allowed to spoil or undermine the election.",
+  "Exit polls come at ten at night Israel time, which is one in the morning in Pakistan. Official results are due by the fourth of November.",
+  "And winning the most seats does not automatically decide who becomes prime minister. Coalition talks could take weeks.",
+  "Follow Maps and Musings, for the world's biggest stories, explained."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "ISR"
+   ],
+   "pin": [
+    31.77,
+    35.21
+   ],
+   "label": "Israel votes",
+   "span": 10,
+   "span_start": 70
+  },
+  {
+   "type": "stat",
+   "big": "7.3 million",
+   "small": "Eligible voters, including about 1.2 million Palestinian citizens"
+  },
+  {
+   "type": "stat",
+   "big": "12,018",
+   "small": "Polling stations, open 7 am to 10 pm"
+  },
+  {
+   "type": "stat",
+   "big": "3.25%",
+   "small": "Threshold to enter the Knesset; 37 parties running"
+  },
+  {
+   "type": "stat",
+   "big": "22–23",
+   "small": "Seats for Eisenkot's Yashar in final polls"
+  },
+  {
+   "type": "stat",
+   "big": "19–21",
+   "small": "Seats for Netanyahu's Likud in final polls"
+  },
+  {
+   "type": "stat",
+   "big": "~50 vs 52–56",
+   "small": "Netanyahu's bloc vs the opposition; 61 needed"
+  },
+  {
+   "type": "stat",
+   "big": "14–16",
+   "small": "Projected seats for Palestinian-led parties"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "ISR"
+   ],
+   "pin": [
+    31.77,
+    35.21
+   ],
+   "label": "Jerusalem",
+   "span": 4,
+   "span_start": 20
+  },
+  {
+   "type": "stat",
+   "big": "1 am PKT",
+   "small": "Exit polls; official results by 4 November"
+  },
+  {
+   "type": "stat",
+   "big": "Weeks",
+   "small": "Coalition talks could take after the vote"
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-27-14-israel-results.jpg"
+  }
+ ]
+}
