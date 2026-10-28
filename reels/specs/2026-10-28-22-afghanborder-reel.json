@@ -1,0 +1,100 @@
+{
+ "kicker": "Region",
+ "title": "Pakistan and the Taliban: the border on fire",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Photo: Unsplash · Map: Natural Earth",
+ "lines": [
+  "Pakistan and Afghanistan's Taliban government are locked in a dangerous conflict along their border.",
+  "Clashes began on October the twelfth and have flared in several places along the frontier, with each side blaming the other for starting them.",
+  "On October the seventeenth, the two sides exchanged fire for nearly four hours, in Kurram district and across the border in Afghanistan's Paktia province.",
+  "Pakistani officials said Taliban fighters were killed and border posts destroyed. Afghan media reported Pakistani soldiers killed. Neither claim has been independently verified.",
+  "Pakistan accuses the Taliban of sheltering militants, including the Pakistani Taliban, the TTP. Kabul rejects that accusation.",
+  "Tensions rose after a suicide attack in north-western Pakistan on September the eighteenth, which killed thirty-one people.",
+  "Talks in Moscow on October the fifth ended without a joint statement, after disagreements between Pakistan and the Taliban.",
+  "The United Nations mission in Afghanistan counted thirteen civilians killed in cross-border attacks between July and September.",
+  "Russia, China and the European Union have all urged dialogue, and China has told the Taliban to act against militant groups.",
+  "On October the eleventh, the federal government also imposed emergency rule in Khyber Pakhtunkhwa, the PTI-governed province on the border, citing security.",
+  "For families on both sides of the frontier, the fighting has brought fear, and some have fled their homes.",
+  "Follow Maps and Musings, for South Asia's biggest stories, explained."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "PAK",
+    "AFG"
+   ],
+   "pin": [
+    33.8,
+    70.1
+   ],
+   "label": "Pakistan–Afghanistan border",
+   "span": 20,
+   "span_start": 60
+  },
+  {
+   "type": "stat",
+   "big": "12 October",
+   "small": "Clashes began; each side blames the other"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "PAK",
+    "AFG"
+   ],
+   "pin": [
+    33.75,
+    69.95
+   ],
+   "label": "Kurram and Paktia",
+   "span": 6,
+   "span_start": 20
+  },
+  {
+   "type": "stat",
+   "big": "Unverified",
+   "small": "Casualty claims from both sides"
+  },
+  {
+   "type": "stat",
+   "big": "TTP",
+   "small": "Pakistan says the Taliban shelter militants; Kabul denies it"
+  },
+  {
+   "type": "stat",
+   "big": "31 killed",
+   "small": "Suicide attack in north-west Pakistan, 18 September"
+  },
+  {
+   "type": "stat",
+   "big": "No statement",
+   "small": "Moscow talks, 5 October"
+  },
+  {
+   "type": "stat",
+   "big": "13 civilians",
+   "small": "Killed in cross-border attacks, July–Sept, says UNAMA"
+  },
+  {
+   "type": "stat",
+   "big": "Dialogue",
+   "small": "Urged by Russia, China and the EU"
+  },
+  {
+   "type": "stat",
+   "big": "Emergency rule",
+   "small": "Imposed in Khyber Pakhtunkhwa, 11 October"
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1542401886-65d6c61db217",
+   "tag": "File photo"
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-28-22-pak-afghan-border.jpg"
+  }
+ ]
+}

@@ -1,0 +1,98 @@
+{
+ "kicker": "Heritage",
+ "title": "Makli: the city of the dead in Sindh",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Map: Natural Earth",
+ "lines": [
+  "On a low hill near Thatta, in Sindh, lies one of the largest cemeteries in the world. This is Makli.",
+  "The necropolis stretches along a plateau about six and a half kilometres long.",
+  "Estimates of its graves range from about one hundred and twenty-five thousand to half a million.",
+  "Burials here began in the fourteenth century, and continued for around four hundred years.",
+  "Thatta was then the capital of Sindh, ruled in turn by the Samma, Arghun and Tarkhan dynasties, and later by the Mughals.",
+  "Kings, queens, saints, scholars and poets were buried here.",
+  "One of the finest tombs belongs to Jam Nizamuddin the Second, who ruled Sindh from fourteen sixty-one to fifteen-oh-nine. Its stone carvings blend Hindu and Islamic designs.",
+  "Later tombs, like those of Isa Khan Tarkhan and Diwan Shurfa Khan, are decorated with glazed tiles and fine brickwork.",
+  "In nineteen eighty-one, UNESCO listed the Historical Monuments at Makli as a World Heritage Site.",
+  "But the site is under threat from salty winds, heavy rain, encroachment and neglect, and UNESCO says funding for its care is inadequate.",
+  "It remains a remarkable record of Sindh's history, written in stone.",
+  "Follow Maps and Musings, for Pakistan's heritage, explained."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "PAK"
+   ],
+   "pin": [
+    24.75,
+    67.9
+   ],
+   "label": "Makli, Thatta",
+   "span": 12,
+   "span_start": 60
+  },
+  {
+   "type": "stat",
+   "big": "6.5 km",
+   "small": "Length of the Makli plateau"
+  },
+  {
+   "type": "stat",
+   "big": "125,000 to 500,000",
+   "small": "Estimated graves"
+  },
+  {
+   "type": "stat",
+   "big": "14th century",
+   "small": "When burials began"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "PAK"
+   ],
+   "pin": [
+    24.75,
+    67.92
+   ],
+   "label": "Thatta",
+   "span": 4,
+   "span_start": 20
+  },
+  {
+   "type": "stat",
+   "big": "Kings & saints",
+   "small": "Rulers, saints, scholars and poets lie here"
+  },
+  {
+   "type": "stat",
+   "big": "1461–1509",
+   "small": "Reign of Jam Nizamuddin II"
+  },
+  {
+   "type": "stat",
+   "big": "Glazed tiles",
+   "small": "Decorate later Tarkhan and Mughal-era tombs"
+  },
+  {
+   "type": "stat",
+   "big": "1981",
+   "small": "UNESCO World Heritage Site"
+  },
+  {
+   "type": "stat",
+   "big": "At risk",
+   "small": "Salt winds, rain, encroachment and neglect"
+  },
+  {
+   "type": "stat",
+   "big": "Sindh",
+   "small": "A history written in stone"
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-29-00-makli.jpg"
+  }
+ ]
+}

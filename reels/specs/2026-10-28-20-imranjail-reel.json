@@ -1,0 +1,98 @@
+{
+ "kicker": "Pakistan",
+ "title": "Imran Khan may be moved to Islamabad's new jail",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Map: Natural Earth",
+ "lines": [
+  "Imran Khan may soon be moved from Adiala Jail, where he has been held for more than two years.",
+  "Interior Minister Mohsin Naqvi visited Islamabad's new Model Jail on Tuesday, and hinted that the PTI founder could be shifted there.",
+  "Asked directly, he said: whosoever is a prisoner of Islamabad will be shifted here.",
+  "The jail is in Sector H-sixteen of Islamabad. It covers ninety acres, and is designed for two thousand prisoners.",
+  "Work on it began in two thousand and nine. Naqvi said the project had been pending for seventeen years.",
+  "Islamabad has never had a working prison of its own, so its prisoners are held at Adiala, in Rawalpindi.",
+  "In the first phase, about fifteen hundred prisoners are to be moved. The jail has three barracks, a thirty-five bed hospital, a mosque and a kitchen.",
+  "Prime Minister Shehbaz Sharif is expected to open the jail in the coming days.",
+  "According to jail sources quoted by the Express Tribune, Imran Khan could be moved between November the twentieth and the thirtieth, and a special ward for him is almost ready.",
+  "Imran Khan has been in jail since August twenty twenty-three. He is serving a sentence in the one hundred and ninety million pound case, which he and his party call politically motivated.",
+  "He also faces trials over the protests of May the ninth, twenty twenty-three. The reports did not include a response from PTI.",
+  "Follow Maps and Musings, for Pakistan's politics, explained."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "PAK"
+   ],
+   "pin": [
+    33.6,
+    73.04
+   ],
+   "label": "Adiala Jail, Rawalpindi",
+   "span": 8,
+   "span_start": 40
+  },
+  {
+   "type": "map",
+   "countries": [
+    "PAK"
+   ],
+   "pin": [
+    33.62,
+    72.95
+   ],
+   "label": "Islamabad Model Jail, H-16",
+   "span": 4,
+   "span_start": 20
+  },
+  {
+   "type": "stat",
+   "big": "“Prisoners of Islamabad”",
+   "small": "Will be shifted here, says Mohsin Naqvi"
+  },
+  {
+   "type": "stat",
+   "big": "90 acres",
+   "small": "Designed for 2,000 prisoners"
+  },
+  {
+   "type": "stat",
+   "big": "17 years",
+   "small": "The project was pending, says Naqvi"
+  },
+  {
+   "type": "stat",
+   "big": "Adiala",
+   "small": "Where Islamabad's prisoners are held now"
+  },
+  {
+   "type": "stat",
+   "big": "1,500",
+   "small": "Prisoners to move in the first phase"
+  },
+  {
+   "type": "stat",
+   "big": "Coming days",
+   "small": "PM Shehbaz Sharif expected to open the jail"
+  },
+  {
+   "type": "stat",
+   "big": "20–30 Nov",
+   "small": "Possible move, according to jail sources"
+  },
+  {
+   "type": "stat",
+   "big": "Aug 2023",
+   "small": "Imran Khan in jail since"
+  },
+  {
+   "type": "stat",
+   "big": "9 May",
+   "small": "Trials over the 2023 protests are pending"
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-28-20-imran-jail.jpg"
+  }
+ ]
+}

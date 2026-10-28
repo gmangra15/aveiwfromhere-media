@@ -1,0 +1,80 @@
+{
+ "kicker": "Nature",
+ "title": "Fly over Naltar, Pakistan's ski valley",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "3D terrain: AWS Terrain Tiles · Imagery: Sentinel-2 cloudless 2016 by EOX (CC BY 4.0) · Map: Natural Earth",
+ "lines": [
+  "North of Gilgit, a side valley climbs into the Karakoram mountains. This is Naltar.",
+  "We start over the Hunza River, and then turn west, into the valley.",
+  "Naltar is about forty kilometres from Gilgit, but the last part of the road is a rough jeep track along the Naltar River.",
+  "The valley is lined with thick pine forests, rare in this dry and rocky part of Gilgit-Baltistan.",
+  "There are two main villages: Naltar Payan, the lower village, and Naltar Bala, the upper one.",
+  "In winter, Naltar becomes one of Pakistan's few ski resorts. The Pakistan Air Force runs the slopes, and hosts national championships here.",
+  "A chairlift was installed in twenty fourteen, running from the Air Force base camp towards Bargo Pass.",
+  "Skiers from Pakistan have competed at the Winter Olympics, including Muhammad Abbas in twenty ten, and Muhammad Karim in twenty fourteen.",
+  "Higher up, the Naltar lakes, also called the Bashkiri lakes, shine in shades of green, blue and turquoise.",
+  "In summer, the meadows fill with flowers, and visitors come for trekking, camping and fishing.",
+  "Many families here farm small plots, and grow potatoes once a year. Many others work at the ski resort.",
+  "Follow Maps and Musings, and explore Pakistan's most beautiful places with us."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "PAK"
+   ],
+   "pin": [
+    36.16,
+    74.2
+   ],
+   "label": "Naltar Valley",
+   "span": 10,
+   "span_start": 60
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/naltar.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/naltar.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/naltar.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/naltar.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/naltar.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/naltar.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/naltar.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/naltar.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/naltar.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/naltar.json"
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-29-12-naltar.jpg"
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "kicker": "World",
+ "title": "The Iran war has now cost America $47 billion",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Photo: Unsplash · Map: Natural Earth",
+ "lines": [
+  "The United States has now spent more than forty-seven billion dollars on its war with Iran, according to a new Pentagon estimate.",
+  "The figure was given to lawmakers, and reported by CBS News and Reuters. It covers costs up to mid-October.",
+  "Most of it, about twenty-nine billion dollars, is to replace missiles, bombs and interceptors used in the war.",
+  "Another six billion dollars is for equipment that was lost, including many drones.",
+  "Almost twelve billion more covers the extra costs of running the operation, such as flights and support for troops.",
+  "In July, Defence Secretary Pete Hegseth had put the cost at thirty-seven and a half billion dollars. The new figure is more than twenty-five percent higher.",
+  "And it does not include repairs to American bases in the Middle East that were hit by Iranian missiles and drones.",
+  "The Congressional Budget Office estimates that the war costs two to three billion dollars for every month it continues.",
+  "The war began in February, when the United States and Israel launched strikes on Iran. It is now in its ninth month.",
+  "Fighting has been quieter in recent weeks, but President Trump has suggested combat could resume after the midterm elections on November the third, unless Iran agrees to a deal.",
+  "The Pentagon's own inspector general has warned of shortfalls in some American weapons stocks.",
+  "Follow Maps and Musings, for the world's biggest stories, explained."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "USA",
+    "IRN"
+   ],
+   "pin": [
+    35.69,
+    51.39
+   ],
+   "label": "Iran war",
+   "span": 60,
+   "span_start": 120
+  },
+  {
+   "type": "stat",
+   "big": "$47.1bn",
+   "small": "Pentagon estimate of US war costs to mid-October"
+  },
+  {
+   "type": "stat",
+   "big": "$29bn",
+   "small": "To replace munitions used"
+  },
+  {
+   "type": "stat",
+   "big": "$6.1bn",
+   "small": "To replace lost equipment, including drones"
+  },
+  {
+   "type": "stat",
+   "big": "$11.9bn",
+   "small": "Extra operating costs, including troop support"
+  },
+  {
+   "type": "stat",
+   "big": "+25%",
+   "small": "Above July's $37.5bn estimate"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "IRN",
+    "SAU",
+    "ARE",
+    "QAT",
+    "BHR",
+    "KWT",
+    "IRQ"
+   ],
+   "pin": [
+    26.0,
+    51.5
+   ],
+   "label": "US bases in the Gulf",
+   "span": 22,
+   "span_start": 40
+  },
+  {
+   "type": "stat",
+   "big": "$2–3bn",
+   "small": "Cost per month, says the Congressional Budget Office"
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1579878235007-a5a0b8f2072f",
+   "tag": "Tehran, file photo"
+  },
+  {
+   "type": "stat",
+   "big": "3 November",
+   "small": "US midterm elections"
+  },
+  {
+   "type": "stat",
+   "big": "Shortfalls",
+   "small": "In some US weapons stocks, says the Pentagon's inspector general"
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-28-16-iran-war-cost.jpg"
+  }
+ ]
+}

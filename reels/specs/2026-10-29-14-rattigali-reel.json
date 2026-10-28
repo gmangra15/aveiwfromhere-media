@@ -1,0 +1,80 @@
+{
+ "kicker": "Nature",
+ "title": "Fly to Ratti Gali, the jewel of Neelum",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "3D terrain: AWS Terrain Tiles · Imagery: Sentinel-2 cloudless 2016 by EOX (CC BY 4.0) · Map: Natural Earth",
+ "lines": [
+  "In the far north of Azad Kashmir lies the Neelum Valley, one of the greenest corners of Pakistan.",
+  "Let's fly up from the Neelum River, towards one of its most famous lakes.",
+  "The route starts near the village of Dowarian. From there, a jeep track and then a hike lead up into the mountains.",
+  "Ahead lies Ratti Gali Lake, about three thousand seven hundred metres above sea level.",
+  "It is an alpine lake, fed by melting snow and glaciers on the peaks around it.",
+  "In summer, the meadows around the lake fill with wildflowers, such as primulas and gentians.",
+  "The area is home to the colourful Himalayan monal pheasant, and even the Himalayan brown bear.",
+  "For most of the year, the lake is frozen and cut off by snow. It is usually reached only from about July to September.",
+  "Visitors often camp at the base camp below, and walk up to the lake in the early morning.",
+  "In July twenty twenty-four, two tourists were killed when a jeep heading for Ratti Gali fell into a water channel, and officials began a crackdown on unfit vehicles.",
+  "As tourism grows, visitors are being urged to keep the lake clean, and take their rubbish home.",
+  "Follow Maps and Musings, and explore Pakistan's most beautiful places with us."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "PAK"
+   ],
+   "pin": [
+    34.83,
+    74.06
+   ],
+   "label": "Ratti Gali Lake",
+   "span": 10,
+   "span_start": 60
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/rattigali.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/rattigali.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/rattigali.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/rattigali.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/rattigali.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/rattigali.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/rattigali.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/rattigali.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/rattigali.json"
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/rattigali.json"
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-29-14-rattigali.jpg"
+  }
+ ]
+}

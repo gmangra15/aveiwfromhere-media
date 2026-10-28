@@ -1,0 +1,98 @@
+{
+ "kicker": "India",
+ "title": "Cyclone Arnab slams into India's east coast",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Photo: Unsplash · Map: Natural Earth",
+ "lines": [
+  "A very severe cyclone named Arnab has hit the coast of Andhra Pradesh, in eastern India.",
+  "It began making landfall at about half past one on Wednesday morning, near the town of Narsapur.",
+  "India's weather department reported winds of one hundred and twenty-five to one hundred and thirty-five kilometres an hour, gusting to one hundred and fifty.",
+  "Forecasters warned of a storm surge of up to two and a half metres around Kakinada and Yanam.",
+  "Visakhapatnam recorded more than two hundred and sixteen millimetres of rain in a single day.",
+  "Authorities in Andhra Pradesh and Odisha moved tens of thousands of people into relief shelters.",
+  "Chief Minister Chandrababu Naidu said no deaths had been reported by Wednesday morning.",
+  "But hundreds of trees were uprooted, power was cut across wide areas, and roads along the coast were damaged.",
+  "More than sixty trains were cancelled, flights were disrupted, and schools were closed.",
+  "After crossing the coast, Arnab weakened into a severe cyclonic storm, and is moving slowly north-west.",
+  "Heavy rain alerts remain in place, and officials are now assessing the damage to crops and homes.",
+  "Follow Maps and Musings, for South Asia's biggest stories, explained."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "IND"
+   ],
+   "pin": [
+    16.43,
+    81.7
+   ],
+   "label": "Narsapur, Andhra Pradesh",
+   "span": 20,
+   "span_start": 60
+  },
+  {
+   "type": "stat",
+   "big": "1:30 am",
+   "small": "Landfall began near Narsapur, Wednesday"
+  },
+  {
+   "type": "stat",
+   "big": "125–135 km/h",
+   "small": "Winds, gusting to 150 km/h, says IMD"
+  },
+  {
+   "type": "stat",
+   "big": "2.5 m",
+   "small": "Possible storm surge near Kakinada and Yanam"
+  },
+  {
+   "type": "stat",
+   "big": "216.9 mm",
+   "small": "Rain in Visakhapatnam in 24 hours"
+  },
+  {
+   "type": "photo",
+   "src": "https://images.unsplash.com/photo-1518156677180-95a2893f3e9f",
+   "tag": "Bay of Bengal, file photo"
+  },
+  {
+   "type": "stat",
+   "big": "No deaths",
+   "small": "Reported by Wednesday morning, says the Chief Minister"
+  },
+  {
+   "type": "stat",
+   "big": "Hundreds",
+   "small": "Of trees uprooted; wide power cuts"
+  },
+  {
+   "type": "stat",
+   "big": "60+",
+   "small": "Trains cancelled"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "IND"
+   ],
+   "pin": [
+    17.0,
+    82.2
+   ],
+   "label": "Kakinada",
+   "span": 8,
+   "span_start": 30
+  },
+  {
+   "type": "stat",
+   "big": "Red alert",
+   "small": "Heavy rain warnings remain"
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-28-18-cyclone-arnab.jpg"
+  }
+ ]
+}
