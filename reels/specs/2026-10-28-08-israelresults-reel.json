@@ -1,0 +1,35 @@
+{
+ "kicker": "World",
+ "title": "Israel election: what the exit polls show",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Map: Natural Earth",
+ "lines": [
+  "Israel has voted, and the exit polls point to a deadlock.",
+  "These are exit polls from Israel's three main TV channels, not official results.",
+  "Benjamin Netanyahu's Likud is projected as the largest party, with twenty-four to twenty-five seats.",
+  "Former army chief Gadi Eisenkot's Yashar party is close behind, with twenty-one to twenty-three.",
+  "Naftali Bennett's party is projected at twelve to fourteen seats.",
+  "But Netanyahu's right-wing and religious bloc is projected at only about fifty seats. The opposition bloc is at fifty-two to fifty-three. A government needs sixty-one.",
+  "Arab parties are projected at seventeen to eighteen seats, which could make them decisive.",
+  "Turnout was the highest in decades. Ynet reports seventy-four point three percent had voted by eight in the evening.",
+  "Netanyahu claimed the right had won a decisive majority among Zionist voters, and said he plans to form a right-wing government. Eisenkot had urged him to accept defeat and step down.",
+  "More than six hundred and fifty thousand special ballots, including soldiers' votes, are counted separately, and could still shift a few seats.",
+  "Official results are due by the fourth of November. Then the president asks a leader to try to build a coalition, which could take weeks.",
+  "Follow Maps and Musings, for the world's biggest stories, explained."
+ ],
+ "scenes": [
+  {"type": "map", "countries": ["ISR"], "pin": [31.77, 35.21], "label": "Israel votes", "span": 10, "span_start": 70},
+  {"type": "stat", "big": "Exit polls", "small": "Kan, Channel 12 and Channel 13 — not official results"},
+  {"type": "stat", "big": "24–25", "small": "Seats for Netanyahu's Likud"},
+  {"type": "stat", "big": "21–23", "small": "Seats for Eisenkot's Yashar"},
+  {"type": "stat", "big": "12–14", "small": "Seats for Bennett's party"},
+  {"type": "stat", "big": "50 vs 52–53", "small": "Netanyahu's bloc vs the opposition; 61 needed"},
+  {"type": "stat", "big": "17–18", "small": "Projected seats for Arab parties"},
+  {"type": "stat", "big": "74.3%", "small": "Turnout by 8 pm, per Ynet — highest in decades"},
+  {"type": "map", "countries": ["ISR"], "pin": [31.77, 35.21], "label": "Jerusalem", "span": 4, "span_start": 20},
+  {"type": "stat", "big": "650,000+", "small": "Special ballots still to be counted"},
+  {"type": "stat", "big": "4 November", "small": "Official results; then coalition talks"},
+  {"type": "card", "src": "cards/2026-10-28-08-israel-results.jpg"}
+ ]
+}
