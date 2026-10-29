@@ -1,0 +1,98 @@
+{
+ "kicker": "World",
+ "title": "Israel's vote count: a deadlock",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Map: Natural Earth",
+ "lines": [
+  "Israel's vote count is almost complete, and the result is a deadlock.",
+  "With about ninety percent of votes counted, Benjamin Netanyahu's right-wing and religious bloc has fifty-three seats, according to the Times of Israel and Ynet.",
+  "Gadi Eisenkot's opposition bloc has forty-eight. A government needs sixty-one of the Knesset's one hundred and twenty seats.",
+  "Likud is still the largest single party, with twenty-six seats. Eisenkot's Yashar has twenty-one, and Naftali Bennett's party twelve.",
+  "The big story is the Arab parties. Together, the Joint List and Ra'am have nineteen seats, their highest ever, on record turnout in Arab towns.",
+  "Netanyahu claimed that high Arab turnout was part of an effort to steal the election. The Central Elections Committee said it had seen no sign of systematic tampering.",
+  "Eisenkot said the public chose change, and called on Netanyahu to step down. Netanyahu urged what he called the Zionist majority to unite.",
+  "The Joint List says it is ready to help remove Netanyahu's government. But most Zionist parties have ruled out working with the Arab parties.",
+  "About half a million special ballots, mostly from soldiers, are still being counted. Each seat is worth about forty thousand votes, so a few seats could still change.",
+  "Official final results are due on the fourth of November. Analysts see three options: a deal involving Arab parties, a unity government, or another election.",
+  "Until a new government is formed, Netanyahu's current government stays in office as a caretaker.",
+  "Follow Maps and Musings, for the world's biggest stories, explained."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "ISR"
+   ],
+   "pin": [
+    31.77,
+    35.21
+   ],
+   "label": "Israel",
+   "span": 10,
+   "span_start": 70
+  },
+  {
+   "type": "stat",
+   "big": "53",
+   "small": "Netanyahu's bloc, with about 90% counted"
+  },
+  {
+   "type": "stat",
+   "big": "48 · 61",
+   "small": "Eisenkot's bloc · seats needed for a majority"
+  },
+  {
+   "type": "stat",
+   "big": "26",
+   "small": "Likud, still the largest party"
+  },
+  {
+   "type": "stat",
+   "big": "19",
+   "small": "Arab parties, an all-time high"
+  },
+  {
+   "type": "stat",
+   "big": "“No indication”",
+   "small": "Of systematic tampering, says the election committee"
+  },
+  {
+   "type": "stat",
+   "big": "“Change”",
+   "small": "Eisenkot calls on Netanyahu to step down"
+  },
+  {
+   "type": "stat",
+   "big": "Ruled out",
+   "small": "Most Zionist parties on working with Arab parties"
+  },
+  {
+   "type": "stat",
+   "big": "~500,000",
+   "small": "Special ballots still being counted"
+  },
+  {
+   "type": "stat",
+   "big": "4 November",
+   "small": "Official final results"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "ISR"
+   ],
+   "pin": [
+    31.77,
+    35.21
+   ],
+   "label": "Jerusalem",
+   "span": 4,
+   "span_start": 20
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-29-08-israel-count.jpg"
+  }
+ ]
+}
