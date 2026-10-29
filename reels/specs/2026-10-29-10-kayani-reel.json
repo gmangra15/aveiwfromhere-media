@@ -1,0 +1,106 @@
+{
+ "kicker": "Pakistan",
+ "title": "A top judge resigns, warning about the courts",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "credits": "Map: Natural Earth",
+ "lines": [
+  "One of Pakistan's best-known judges has resigned, with a strong warning about the state of the courts.",
+  "Justice Mohsin Akhtar Kayani of the Lahore High Court sent his resignation to the President on Wednesday.",
+  "He cited health problems after a recent surgery, and what he called reasons of conscience.",
+  "In his letter, he wrote that the twenty-sixth and twenty-seventh constitutional amendments compromised the independence and integrity of the high courts.",
+  "He described the executive's growing control over judicial institutions, including the appointment and transfer of judges.",
+  "And he wrote: my conscience does not permit me to continue on the bench.",
+  "Justice Kayani was the second most senior judge of the Islamabad High Court, and was expected to become its chief justice.",
+  "But in April, he was transferred to the Lahore High Court, where he dropped to twelfth in seniority. He had challenged such transfers, but the Supreme Court's constitutional bench upheld them.",
+  "Days before resigning, he was posted to a single bench at the court's Rawalpindi registry.",
+  "He says he decided more than twenty-three thousand cases, and will now return to practising law. He was not due to retire until twenty thirty-two.",
+  "The reports did not include a response from the government. Supporters of the amendments say they reform the judiciary; critics say they weaken it.",
+  "Follow Maps and Musings, for Pakistan's politics, explained."
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "countries": [
+    "PAK"
+   ],
+   "pin": [
+    31.55,
+    74.34
+   ],
+   "label": "Lahore High Court",
+   "span": 8,
+   "span_start": 40
+  },
+  {
+   "type": "stat",
+   "big": "Resigned",
+   "small": "Justice Mohsin Akhtar Kayani, Lahore High Court"
+  },
+  {
+   "type": "stat",
+   "big": "Health & conscience",
+   "small": "Reasons given in his letter to the President"
+  },
+  {
+   "type": "stat",
+   "big": "26th & 27th",
+   "small": "Amendments he says compromised the high courts"
+  },
+  {
+   "type": "stat",
+   "big": "Appointments & transfers",
+   "small": "Where he says executive control has grown"
+  },
+  {
+   "type": "stat",
+   "big": "“Conscience”",
+   "small": "Does not permit me to continue on the bench"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "PAK"
+   ],
+   "pin": [
+    33.7,
+    73.05
+   ],
+   "label": "Islamabad High Court",
+   "span": 6,
+   "span_start": 20
+  },
+  {
+   "type": "stat",
+   "big": "2nd → 12th",
+   "small": "His seniority after the transfer to the LHC"
+  },
+  {
+   "type": "map",
+   "countries": [
+    "PAK"
+   ],
+   "pin": [
+    33.6,
+    73.05
+   ],
+   "label": "Rawalpindi registry",
+   "span": 4,
+   "span_start": 10
+  },
+  {
+   "type": "stat",
+   "big": "23,000+",
+   "small": "Cases he says he decided"
+  },
+  {
+   "type": "stat",
+   "big": "Debate",
+   "small": "Reform, say supporters; weakening, say critics"
+  },
+  {
+   "type": "card",
+   "src": "cards/2026-10-29-10-kayani-resigns.jpg"
+  }
+ ]
+}
