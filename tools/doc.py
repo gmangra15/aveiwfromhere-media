@@ -485,7 +485,100 @@ def r_flight(sh, u, tl, t, fi):
     return grade(im, sat=0.98, contrast=1.04)
 
 
-RENDER = dict(sat=r_sat, title=r_title, stat=r_stat, bars=r_bars, timeline=r_timeline, quote=r_quote, intro=r_intro, outro=r_outro, flight=r_flight)
+
+# ---------------------------------------------------------------- real footage
+FOOT = "/home/claude/footage"
+def clip_plan(sh):
+    """split the shot into its clips: list of (t_start, t_end, clip)."""
+    cl = sh["clips"]; d = sh["_dur"] + 1.0
+    fixed = sum(c.get("len", 0) for c in cl); free = [c for c in cl if not c.get("len")]
+    each = max(1.5, (d - fixed) / max(1, len(free))) if free else 0
+    out, t = [], 0.0
+    for c in cl:
+        ln = c.get("len") or each
+        out.append((t, t + ln, c)); t += ln
+    return out
+
+
+def prep_clips(sh, cache_root):
+    """extract each clip segment to 1920x1080 JPEG frames at 25 fps (cached)."""
+    import hashlib
+    sh["_plan"] = clip_plan(sh)
+    for a, b, c in sh["_plan"]:
+        ln = b - a + 0.6
+        if c.get("photo"):
+            c["_img"] = c["photo"]; continue
+        src = c["file"] if os.path.isabs(c["file"]) else os.path.join(FOOT, c["file"])
+        dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", src], capture_output=True, text=True).stdout.strip() or 0)
+        st = min(c.get("start", 0.0), max(0.0, dur - 0.5))
+        avail = max(0.5, dur - st)
+        speed = min(1.0, avail / ln)  # slow down short clips instead of freezing
+        key = hashlib.sha1(f"{src}|{st}|{ln:.2f}|{speed:.3f}|{c.get('flip')}".encode()).hexdigest()[:16]
+        out = os.path.join(cache_root, key); c["_dir"] = out
+        if os.path.exists(os.path.join(out, "done")): c["_n"] = len(os.listdir(out)) - 1; continue
+        os.makedirs(out, exist_ok=True)
+        vf = f"setpts={1/speed:.4f}*PTS,fps=25,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080"
+        if c.get("flip"): vf += ",hflip"
+        subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-ss", f"{st:.2f}", "-i", src, "-t", f"{ln * speed + 0.1:.2f}", "-vf", vf,
+                        "-q:v", "3", os.path.join(out, "%05d.jpg")], check=True)
+        open(os.path.join(out, "done"), "w").close()
+        c["_n"] = len(os.listdir(out)) - 1
+
+
+_PH = {}
+def photo_frame(c, v):
+    if c["_img"] not in _PH:
+        _PH.clear()
+        src = c["_img"] if os.path.isabs(c["_img"]) else os.path.join(FOOT, c["_img"])
+        _PH[c["_img"]] = Image.open(src).convert("RGB")
+    im = _PH[c["_img"]]
+    z0, z1 = c.get("zoom", [1.0, 1.12]); z = z0 + (z1 - z0) * v
+    fx0, fy0 = c.get("from", [0.5, 0.5]); fx1, fy1 = c.get("to", [0.5, 0.45])
+    fx, fy = fx0 + (fx1 - fx0) * v, fy0 + (fy1 - fy0) * v
+    r = max(W / im.width, H / im.height) * z; cw, ch = W / r, H / r
+    x0 = min(max(fx * im.width - cw / 2, 0), im.width - cw); y0 = min(max(fy * im.height - ch / 2, 0), im.height - ch)
+    return im.resize((W, H), Image.BICUBIC, box=(x0, y0, x0 + cw, y0 + ch))
+
+
+def clip_img(c, lt, ln):
+    v = max(0.0, min(1.0, lt / max(0.1, ln)))
+    if c.get("photo"): return photo_frame(c, v)
+    k = min(c["_n"], max(1, int(lt * FPS) + 1))
+    im = Image.open(os.path.join(c["_dir"], f"{k:05d}.jpg")).convert("RGB")
+    z = 1.0 + c.get("push", 0.045) * v  # slow push-in for a cinematic feel
+    if z > 1.001:
+        cw, ch = W / z, H / z; ox, oy = c.get("focus", [0.5, 0.5])
+        x0 = (W - cw) * ox; y0 = (H - ch) * oy
+        im = im.resize((W, H), Image.BICUBIC, box=(x0, y0, x0 + cw, y0 + ch))
+    return im
+
+
+def r_clips(sh, u, tl, t, fi):
+    plan = sh["_plan"]; XF = 0.45
+    j = max(k for k, (a, b, c) in enumerate(plan) if a <= tl or k == 0)
+    a, b, c = plan[j]
+    im = clip_img(c, tl - a, b - a)
+    if j + 1 < len(plan) and tl > plan[j + 1][0] - XF:
+        a2, b2, c2 = plan[j + 1]
+        im = Image.blend(im, clip_img(c2, tl - a2 + XF, b2 - a2), eio((tl - (a2 - XF)) / XF))
+    im = grade(im, sat=c.get("sat", 1.02), contrast=1.06)
+    if c.get("label"):  # location tag
+        d = ImageDraw.Draw(im, "RGBA"); age = tl - a
+        al = ease((age - 0.4) / 0.6) * (1 - ease((age - (b - a) + 0.2) / 0.4))
+        if al > 0.01:
+            f1, f2 = F("SemiBold", 34), F("Regular", 24)
+            x, y = W - 90, H - 120
+            tw = max(d.textlength(c["label"], font=f1), d.textlength(c.get("sub", ""), font=f2))
+            d.text((x, y), c["label"], font=f1, fill=(255, 255, 255, int(255 * al)), anchor="rs", stroke_width=2, stroke_fill=(0, 0, 0, int(120 * al)))
+            if c.get("sub"):
+                d.text((x, y + 34), c["sub"], font=f2, fill=(225, 230, 240, int(240 * al)), anchor="rs", stroke_width=2, stroke_fill=(0, 0, 0, int(120 * al)))
+            d.rectangle([x - tw - 22, y - 30, x - tw - 17, y + 40 if c.get("sub") else y + 4], fill=GOLD + (int(255 * al),))
+    if c.get("credit"):
+        d = ImageDraw.Draw(im, "RGBA")
+        d.text((W - 24, H - 18), c["credit"], font=F("Regular", 16), fill=(255, 255, 255, 120), anchor="rs")
+    return im
+
+RENDER = dict(clips=r_clips, sat=r_sat, title=r_title, stat=r_stat, bars=r_bars, timeline=r_timeline, quote=r_quote, intro=r_intro, outro=r_outro, flight=r_flight)
 
 
 # ---------------------------------------------------------------- audio
@@ -678,6 +771,10 @@ def make(spec, out, only=None, stills=None):
         L = sh["_lines"]
         return lambda i: (L[min(int(i), len(L) - 1)][0] + (i - int(i)) * (L[min(int(i), len(L) - 1)][1] - L[min(int(i), len(L) - 1)][0])) if L else 0.0
     for sh in shots: sh["_ltime"] = mk_lt(sh)
+    # real footage: cut clips to frames
+    for i, sh in enumerate(shots):
+        if sh["type"] == "clips" and (not only or i in only) and (not stills or any(si == i for si, _ in stills)):
+            prep_clips(sh, "/home/claude/flighttest/clipcache")
     # 3D flights
     import flight as FL
     jobs = []
