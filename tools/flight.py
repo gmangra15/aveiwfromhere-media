@@ -98,6 +98,8 @@ def catmull(pts, n):
 
 def render(spec, out_dir):
     os.makedirs(out_dir, exist_ok=True)
+    OW, OH = spec.get("out", [1080, 1920]); RW, RH = spec.get("render", [OW // 2, OH // 2])
+    hz = spec.get("horizon", 0.40); lab_fs = spec.get("label_size", 40)
     hp, tex, mpp, to_px = build(spec, os.path.join(os.path.dirname(out_dir.rstrip("/")) or ".", "tilecache"))
     Hh, Ww = hp.shape
     n = int(spec.get("seconds", 60) * FPS)
@@ -116,7 +118,7 @@ def render(spec, out_dir):
     ang = np.linspace(-fov / 2, fov / 2, RW)
     sky_top = np.array([62, 104, 160], np.float32); sky_hor = np.array([196, 214, 232], np.float32)
     rows = np.arange(RH)
-    font = ImageFont.truetype(BOLD, 40)
+    font = ImageFont.truetype(spec.get("label_font", BOLD), lab_fs)
     only = spec.get("only")
     for fi in range(n):
         if only and fi not in only: continue
@@ -134,7 +136,7 @@ def render(spec, out_dir):
         Z = np.where(inside, Z, -1e6)
         # positive pitch tilts the view down; tilt further down as the camera climbs
         pitch = spec.get("pitch", 0.22) + 0.10 * min(1.0, max(0.0, (calt * mpp - 1200) / 2200))
-        horizon = RH * 0.40 - pitch * focal
+        horizon = RH * hz - pitch * focal
         perp = dist[:, None] * np.cos(ang)[None, :]
         sy = horizon - (Z - camz) / perp * focal
         cm = np.minimum.accumulate(sy, axis=0)
@@ -171,15 +173,15 @@ def render(spec, out_dir):
             py = horizon - (gz - camz) / (rng * math.cos(a_rel)) * focal
             X2, Y2 = px * OW / RW, py * OH / RH
             al = min(1, (tsec - lb["t0"]) / 0.6, (lb["t1"] - tsec) / 0.6)
-            if not (40 < X2 < OW - 40 and 200 < Y2 < OH - 300): continue
+            if not (40 < X2 < OW - 40 and OH * 0.11 < Y2 < OH * 0.85): continue
             txt = lb["text"].upper(); tw = d.textlength(txt, font=font)
-            top = Y2 - 150
-            d.line([(X2, Y2), (X2, top + 60)], fill=(232, 176, 74), width=4)
+            top = Y2 - lab_fs * 3.75
+            d.line([(X2, Y2), (X2, top + lab_fs * 1.5)], fill=(232, 176, 74), width=4)
             d.ellipse([X2 - 10, Y2 - 10, X2 + 10, Y2 + 10], fill=(232, 176, 74), outline=(255, 255, 255), width=3)
             bx = min(max(X2 - tw / 2 - 22, 20), OW - tw - 64)
-            d.rounded_rectangle([bx, top, bx + tw + 44, top + 62], radius=12, fill=(0, 0, 0))
-            d.text((bx + 22, top + 31), txt, font=font, fill=(int(245 * al), int(246 * al), int(250 * al)), anchor="lm")
-        fr.save(os.path.join(out_dir, f"{fi:05d}.jpg"), quality=90)
+            d.rounded_rectangle([bx, top, bx + tw + 44, top + lab_fs * 1.55], radius=12, fill=(0, 0, 0))
+            d.text((bx + 22, top + lab_fs * 0.78), txt, font=font, fill=(int(245 * al), int(246 * al), int(250 * al)), anchor="lm")
+        fr.save(os.path.join(out_dir, f"{fi:05d}.jpg"), quality=92)
         if fi % 100 == 0: print("frame", fi, "/", n, flush=True)
     print("done", n)
 

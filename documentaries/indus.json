@@ -1,0 +1,1031 @@
+{
+ "title": "The Indus: the river that made Pakistan",
+ "voice": "bm_george",
+ "speed": 0.92,
+ "description": "From the glaciers of Tibet to the Arabian Sea, the Indus built one of the world's first civilisations, gave its name to a subcontinent, and still feeds Pakistan today. A Maps and Musings documentary.",
+ "credits": [
+  "Satellite imagery: Sentinel-2 cloudless 2016 by EOX IT Services GmbH (CC BY 4.0) · Terrain: AWS Terrain Tiles",
+  "Map data: Natural Earth · Music: original score · Narration: Maps and Musings",
+  "Facts checked against at least two sources; full list in the description."
+ ],
+ "sources": [
+  {
+   "title": "Al Jazeera: Pakistan wins Indus waters battle at The Hague (1 Sep 2026)",
+   "url": "https://www.aljazeera.com/news/2026/9/1/pakistan-wins-indus-waters-battle-at-the-hague-but-india-threat-remains"
+  },
+  {
+   "title": "Courting The Law: The Indus Waters Treaty before the Court of Arbitration",
+   "url": "https://courtingthelaw.com/2026/10/29/news-events/indus-waters-treaty-arbitration"
+  },
+  {
+   "title": "Al Jazeera: Swallowed by the sea, Pakistan's Indus delta (17 Mar 2025)",
+   "url": "https://www.aljazeera.com/news/2025/3/17/swallowed-by-the-sea-pakistans-indus-delta-now-threatened-by-canals"
+  },
+  {
+   "title": "Express Tribune: Indus delta has shrunk by 92% since 1833",
+   "url": "https://tribune.com.pk/story/1649523/indus-delta-shrunk-92-since-1833"
+  },
+  {
+   "title": "Britannica: Indus civilization",
+   "url": "https://www.britannica.com/topic/Indus-civilization"
+  },
+  {
+   "title": "World Bank: Managing groundwater resources in Pakistan's Indus Basin",
+   "url": "https://www.worldbank.org/en/news/feature/2021/03/25/managing-groundwater-resources-in-pakistan-indus-basin"
+  },
+  {
+   "title": "Business Recorder: Indus dolphin survey 2017",
+   "url": "https://www.brecorder.com/news/amp/4560633"
+  },
+  {
+   "title": "WWF-Pakistan: Saving the Indus river dolphins",
+   "url": "https://wwfpak.org/knowledge_hub_/success_stories_/saving_the_indus_river_dolphins"
+  },
+  {
+   "title": "Vajiram & Ravi: Indus River System",
+   "url": "https://vajiramandravi.com/current-affairs/indus-river-system/"
+  },
+  {
+   "title": "Indus River (encyclopedia mirror, Himalayan Climate and Water Atlas figures)",
+   "url": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Indus"
+  },
+  {
+   "title": "WAPDA: Tarbela Dam",
+   "url": "https://www.wapda.gov.pk/"
+  }
+ ],
+ "shots": [
+  {
+   "type": "intro",
+   "dur": 4.6,
+   "xfade": 0.8
+  },
+  {
+   "type": "sat",
+   "cam": [
+    [
+     31.0,
+     74.0,
+     4.55
+    ],
+    [
+     29.5,
+     72.0,
+     5.15
+    ]
+   ],
+   "borders": true,
+   "rivers": [
+    {
+     "name": "Indus",
+     "t0": 0.04,
+     "t1": 0.8,
+     "width": 4,
+     "flow": true
+    }
+   ],
+   "labels": [
+    {
+     "lat": 32.6,
+     "lon": 81.6,
+     "text": "Tibet",
+     "style": "region",
+     "at": 0
+    },
+    {
+     "lat": 21.8,
+     "lon": 64.0,
+     "text": "Arabian Sea",
+     "style": "water",
+     "at": 1,
+     "size": 36
+    },
+    {
+     "lat": 29.6,
+     "lon": 69.0,
+     "text": "Pakistan",
+     "style": "region",
+     "at": 2,
+     "size": 40
+    }
+   ],
+   "lines": [
+    "It begins as a trickle of meltwater, high on the Tibetan Plateau, more than five thousand metres above the sea.",
+    "From there, it travels more than three thousand kilometres, through some of the highest mountains on Earth, and across the plains, to the Arabian Sea.",
+    "Along the way, it built one of the world's first great civilisations, gave its name to a whole subcontinent, and today it feeds a nation of more than two hundred and forty million people.",
+    "This is the story of the Indus."
+   ],
+   "post": 0.4
+  },
+  {
+   "type": "title",
+   "main": true,
+   "text": "THE INDUS",
+   "sub": "The river that made Pakistan",
+   "bg": [
+    29.8,
+    71.0,
+    5.3
+   ],
+   "rivers": [
+    {
+     "name": "Indus",
+     "t0": 0,
+     "t1": 0.001,
+     "width": 4,
+     "flow": true
+    }
+   ],
+   "dur": 6.0,
+   "xfade": 1.0
+  },
+  {
+   "type": "title",
+   "chapter": "Chapter one",
+   "chapter_name": "From the roof of the world",
+   "text": "From the roof of the world",
+   "bg": [
+    33.5,
+    78.5,
+    6.0
+   ],
+   "dur": 3.6,
+   "xfade": 0.9
+  },
+  {
+   "type": "sat",
+   "cam": [
+    [
+     31.2,
+     80.9,
+     7.3
+    ],
+    [
+     33.4,
+     78.3,
+     6.7
+    ],
+    [
+     35.3,
+     75.6,
+     7.2
+    ]
+   ],
+   "rivers": [
+    {
+     "name": "Indus",
+     "t0": 0.0,
+     "t1": 0.95,
+     "width": 5,
+     "flow": true
+    }
+   ],
+   "labels": [
+    {
+     "lat": 31.067,
+     "lon": 81.312,
+     "text": "Mount Kailash",
+     "style": "pin",
+     "at": 0
+    },
+    {
+     "lat": 30.68,
+     "lon": 81.45,
+     "text": "Lake Manasarovar",
+     "style": "pin",
+     "at": 0.5,
+     "side": "l"
+    },
+    {
+     "lat": 34.15,
+     "lon": 77.58,
+     "text": "Ladakh",
+     "style": "region",
+     "at": 1
+    },
+    {
+     "lat": 35.9,
+     "lon": 74.6,
+     "text": "Gilgit-Baltistan",
+     "style": "region",
+     "at": 1.6
+    },
+    {
+     "lat": 35.297,
+     "lon": 75.633,
+     "text": "Skardu",
+     "style": "pin",
+     "at": 2
+    }
+   ],
+   "lines": [
+    "The Indus rises in western Tibet, near the sacred Mount Kailash and Lake Manasarovar. Tibetans call it the Senge Tsangpo, the Lion River.",
+    "It flows north-west through Ladakh, in Indian-administered Kashmir, and then into Gilgit-Baltistan, in Pakistan.",
+    "On the way, it gathers rivers fed by the great glaciers of the Karakoram and the Himalaya."
+   ],
+   "lower": [
+    "Upper Indus",
+    "Tibet · Ladakh · Gilgit-Baltistan"
+   ]
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/indusgorge.json",
+   "lower": [
+    "The Indus gorge",
+    "Gilgit-Baltistan, Pakistan"
+   ],
+   "lines": [
+    "Further west, the river carves its way through deep, narrow gorges.",
+    "Here, the Indus passes beneath Nanga Parbat. At eight thousand one hundred and twenty-six metres, it is the ninth-highest mountain in the world.",
+    "Then the river turns south, and begins its long journey down towards the plains."
+   ]
+  },
+  {
+   "type": "sat",
+   "cam": [
+    [
+     34.6,
+     73.6,
+     7.0
+    ],
+    [
+     32.4,
+     71.6,
+     6.6
+    ],
+    [
+     28.0,
+     69.6,
+     6.5
+    ],
+    [
+     24.9,
+     68.2,
+     7.2
+    ]
+   ],
+   "rivers": [
+    {
+     "name": "Indus",
+     "t0": 0,
+     "t1": 0.001,
+     "width": 5,
+     "flow": true
+    },
+    {
+     "name": "Jhelum",
+     "at": 1,
+     "draw": 2.5,
+     "width": 3.4
+    },
+    {
+     "name": "Chenab",
+     "at": 1.2,
+     "draw": 2.5,
+     "width": 3.4
+    },
+    {
+     "name": "Ravi",
+     "at": 1.4,
+     "draw": 2.5,
+     "width": 3.0
+    },
+    {
+     "name": "Beas",
+     "at": 1.6,
+     "draw": 2.5,
+     "width": 3.0
+    },
+    {
+     "name": "Sutlej",
+     "at": 1.8,
+     "draw": 2.5,
+     "width": 3.4
+    }
+   ],
+   "labels": [
+    {
+     "lat": 34.08,
+     "lon": 72.7,
+     "text": "Tarbela",
+     "style": "pin",
+     "at": 0
+    },
+    {
+     "lat": 33.89,
+     "lon": 72.25,
+     "text": "Attock",
+     "style": "pin",
+     "at": 0.5,
+     "side": "l",
+     "sub": "Kabul River joins"
+    },
+    {
+     "lat": 31.4,
+     "lon": 73.5,
+     "text": "Punjab",
+     "style": "region",
+     "at": 2,
+     "size": 40
+    },
+    {
+     "lat": 28.95,
+     "lon": 70.37,
+     "text": "Mithankot",
+     "style": "pin",
+     "at": 1.7,
+     "side": "l"
+    },
+    {
+     "lat": 26.3,
+     "lon": 68.0,
+     "text": "Sindh",
+     "style": "region",
+     "at": 3,
+     "size": 40
+    },
+    {
+     "lat": 24.75,
+     "lon": 67.92,
+     "text": "Thatta",
+     "style": "pin",
+     "at": 3.5,
+     "side": "l"
+    }
+   ],
+   "lines": [
+    "It leaves the mountains at Tarbela, and flows past Attock, where it is joined by the Kabul River from Afghanistan.",
+    "In Punjab, five great rivers, the Jhelum, Chenab, Ravi, Beas and Sutlej, gather together, and join the Indus near Mithankot.",
+    "That is where Punjab gets its name: the land of five waters.",
+    "Then the Indus crosses Sindh, the province that takes its name from the river, and reaches the Arabian Sea, south of Thatta."
+   ]
+  },
+  {
+   "type": "title",
+   "chapter": "Chapter two",
+   "chapter_name": "A cradle of civilisation",
+   "text": "A cradle of civilisation",
+   "bg": [
+    27.33,
+    68.14,
+    8.0
+   ],
+   "dur": 3.6,
+   "xfade": 0.9
+  },
+  {
+   "type": "sat",
+   "cam": [
+    [
+     29.2,
+     70.6,
+     6.6
+    ],
+    [
+     28.0,
+     69.0,
+     7.6
+    ],
+    [
+     27.329,
+     68.138,
+     12.6
+    ]
+   ],
+   "rivers": [
+    {
+     "name": "Indus",
+     "t0": 0,
+     "t1": 0.001,
+     "width": 4.5
+    },
+    {
+     "name": "Ravi",
+     "t0": 0,
+     "t1": 0.001,
+     "width": 3
+    }
+   ],
+   "labels": [
+    {
+     "lat": 30.63,
+     "lon": 72.86,
+     "text": "Harappa",
+     "style": "pin",
+     "at": 1,
+     "sub": "on the Ravi"
+    },
+    {
+     "lat": 27.329,
+     "lon": 68.138,
+     "text": "Mohenjo-daro",
+     "style": "pin",
+     "at": 1.3,
+     "sub": "beside the Indus, Sindh"
+    }
+   ],
+   "lower": [
+    "Indus Valley Civilisation",
+    "c. 2500 to 1700 BCE"
+   ],
+   "lines": [
+    "Around four and a half thousand years ago, the banks of the Indus were home to one of the world's first great civilisations.",
+    "Its two largest cities were Harappa, on the Ravi, and Mohenjo-daro, beside the Indus in Sindh. Both are in today's Pakistan.",
+    "Mohenjo-daro may have been home to around forty thousand people, in a carefully planned city of brick houses, streets and drains."
+   ]
+  },
+  {
+   "type": "timeline",
+   "bg": [
+    27.329,
+    68.138,
+    9.0
+   ],
+   "events": [
+    {
+     "year": "c. 2500 BCE",
+     "text": "Harappa and Mohenjo-daro flourish",
+     "at": 0
+    },
+    {
+     "year": "c. 1700 BCE",
+     "text": "The great cities fade",
+     "at": 0.6
+    },
+    {
+     "year": "1921–22",
+     "text": "Harappa and Mohenjo-daro identified",
+     "at": 1
+    },
+    {
+     "year": "1980",
+     "text": "Mohenjo-daro becomes a UNESCO World Heritage Site",
+     "at": 1.5
+    }
+   ],
+   "lines": [
+    "The civilisation stretched from Balochistan to near today's Delhi. It traded with Mesopotamia, and it had its own script, which no one has yet been able to read.",
+    "Harappa was identified in nineteen twenty-one, and Mohenjo-daro in nineteen twenty-two. In nineteen eighty, Mohenjo-daro became a UNESCO World Heritage Site."
+   ]
+  },
+  {
+   "type": "stat",
+   "big": "Sindhu",
+   "count": false,
+   "size": 190,
+   "small": "Sanskrit for 'river': the root of Sindh, Indus and India",
+   "bg": [
+    26.0,
+    68.3,
+    7.0
+   ],
+   "lines": [
+    "The river also gave its name to far more than a civilisation. Its ancient Sanskrit name, Sindhu, gave us Sindh, and through Persian and Greek, the words Indus and India."
+   ]
+  },
+  {
+   "type": "title",
+   "chapter": "Chapter three",
+   "chapter_name": "Taming the river",
+   "text": "Taming the river",
+   "bg": [
+    34.08,
+    72.7,
+    9.5
+   ],
+   "dur": 3.6,
+   "xfade": 0.9
+  },
+  {
+   "type": "sat",
+   "cam": [
+    [
+     31.6,
+     71.2,
+     6.7
+    ],
+    [
+     27.4,
+     68.6,
+     6.8
+    ]
+   ],
+   "rivers": [
+    {
+     "name": "Indus",
+     "t0": 0,
+     "t1": 0.001,
+     "width": 5,
+     "flow": true
+    },
+    {
+     "name": "Jhelum",
+     "t0": 0,
+     "t1": 0.001,
+     "width": 3
+    },
+    {
+     "name": "Chenab",
+     "t0": 0,
+     "t1": 0.001,
+     "width": 3
+    },
+    {
+     "name": "Ravi",
+     "t0": 0,
+     "t1": 0.001,
+     "width": 2.6
+    },
+    {
+     "name": "Sutlej",
+     "t0": 0,
+     "t1": 0.001,
+     "width": 3
+    }
+   ],
+   "labels": [
+    {
+     "lat": 32.43,
+     "lon": 71.38,
+     "text": "Chashma Barrage",
+     "style": "pin",
+     "at": 2
+    },
+    {
+     "lat": 30.51,
+     "lon": 70.85,
+     "text": "Taunsa Barrage",
+     "style": "pin",
+     "at": 2.15
+    },
+    {
+     "lat": 28.42,
+     "lon": 69.71,
+     "text": "Guddu Barrage",
+     "style": "pin",
+     "at": 2.35
+    },
+    {
+     "lat": 27.68,
+     "lon": 68.85,
+     "text": "Sukkur Barrage",
+     "style": "pin",
+     "at": 2.5,
+     "side": "l"
+    },
+    {
+     "lat": 25.37,
+     "lon": 68.3,
+     "text": "Kotri Barrage",
+     "style": "pin",
+     "at": 2.7,
+     "side": "l"
+    }
+   ],
+   "lines": [
+    "In the nineteenth century, the British began building modern canals to carry the river's water to farmland.",
+    "Today, the Indus and its tributaries feed what the World Bank calls the largest connected surface-water irrigation system in the world, with thousands of kilometres of canals.",
+    "A chain of barrages along the river, from Chashma and Taunsa in Punjab to Guddu, Sukkur and Kotri in Sindh, turns the river into these canals.",
+    "Much of Pakistan's wheat, rice, cotton and sugarcane depends on this water."
+   ]
+  },
+  {
+   "type": "flight",
+   "spec": "reels/flights/tarbela16.json",
+   "lower": [
+    "Tarbela Dam",
+    "Khyber Pakhtunkhwa, Pakistan"
+   ],
+   "lines": [
+    "In the north, the river is held back by Tarbela Dam, completed in nineteen seventy-six.",
+    "It is one of the largest earth and rock filled dams in the world, and its lake stretches for about eighty kilometres.",
+    "Tarbela stores water for the dry season, and generates hydroelectric power."
+   ]
+  },
+  {
+   "type": "title",
+   "chapter": "Chapter four",
+   "chapter_name": "A river shared",
+   "text": "A river shared",
+   "bg": [
+    32.5,
+    74.5,
+    6.5
+   ],
+   "dur": 3.6,
+   "xfade": 0.9
+  },
+  {
+   "type": "sat",
+   "cam": [
+    [
+     32.2,
+     73.8,
+     6.25
+    ],
+    [
+     32.0,
+     73.6,
+     6.45
+    ]
+   ],
+   "borders": true,
+   "rivers": [
+    {
+     "name": "Indus",
+     "at": 2,
+     "draw": 2.0,
+     "width": 5
+    },
+    {
+     "name": "Jhelum",
+     "at": 2.2,
+     "draw": 2.0,
+     "width": 4
+    },
+    {
+     "name": "Chenab",
+     "at": 2.4,
+     "draw": 2.0,
+     "width": 4
+    },
+    {
+     "name": "Ravi",
+     "at": 3,
+     "draw": 2.0,
+     "width": 4,
+     "color": [
+      240,
+      170,
+      80
+     ]
+    },
+    {
+     "name": "Beas",
+     "at": 3.2,
+     "draw": 2.0,
+     "width": 4,
+     "color": [
+      240,
+      170,
+      80
+     ]
+    },
+    {
+     "name": "Sutlej",
+     "at": 3.4,
+     "draw": 2.0,
+     "width": 4,
+     "color": [
+      240,
+      170,
+      80
+     ]
+    }
+   ],
+   "labels": [
+    {
+     "lat": 30.2,
+     "lon": 70.2,
+     "text": "Pakistan",
+     "style": "region",
+     "at": 0,
+     "size": 40
+    },
+    {
+     "lat": 29.6,
+     "lon": 77.2,
+     "text": "India",
+     "style": "region",
+     "at": 0,
+     "size": 40
+    },
+    {
+     "lat": 33.6,
+     "lon": 71.0,
+     "text": "Western rivers  ·  Pakistan",
+     "style": "water",
+     "at": 3,
+     "size": 30
+    },
+    {
+     "lat": 30.4,
+     "lon": 76.0,
+     "text": "Eastern rivers  ·  India",
+     "style": "water",
+     "at": 3.3,
+     "size": 30
+    }
+   ],
+   "lines": [
+    "When British India was partitioned in nineteen forty-seven, the new border cut straight across the Indus river system.",
+    "The rivers rise in India or flow through it, but Pakistan's farms depend on them downstream.",
+    "In nineteen sixty, after nine years of talks facilitated by the World Bank, the two countries signed the Indus Waters Treaty.",
+    "Pakistan received the western rivers: the Indus, the Jhelum and the Chenab. India received the eastern rivers: the Ravi, the Beas and the Sutlej.",
+    "The treaty survived wars and crises for more than sixty years."
+   ]
+  },
+  {
+   "type": "timeline",
+   "bg": [
+    32.0,
+    74.0,
+    6.0
+   ],
+   "events": [
+    {
+     "year": "1960",
+     "text": "Indus Waters Treaty signed",
+     "at": 0
+    },
+    {
+     "year": "April 2025",
+     "text": "India puts the treaty 'in abeyance'",
+     "at": 0.3
+    },
+    {
+     "year": "31 Aug 2026",
+     "text": "Court of Arbitration: treaty 'remains fully in force'",
+     "at": 2
+    },
+    {
+     "year": "Today",
+     "text": "India rejects the ruling",
+     "at": 3
+    }
+   ],
+   "lines": [
+    "But in April twenty twenty-five, after an attack on tourists in Indian-administered Kashmir that killed twenty-six people, India announced it was placing the treaty in abeyance.",
+    "India says this will last until Pakistan ends what it calls support for cross-border terrorism. Pakistan denies any involvement in the attack.",
+    "On the thirty-first of August twenty twenty-six, the Court of Arbitration in The Hague ruled unanimously that the treaty remains fully in force, and that India cannot suspend it on its own.",
+    "India did not take part in the case. It rejected the ruling, calling the court illegally constituted."
+   ]
+  },
+  {
+   "type": "quote",
+   "text": "Every single drop of Pakistan's water is our red line.",
+   "who": "Prime Minister Shehbaz Sharif, 13 August 2026",
+   "bg": [
+    30.0,
+    71.0,
+    6.0
+   ],
+   "lines": [
+    "Pakistan's prime minister, Shehbaz Sharif, has said that every single drop of Pakistan's water is a red line.",
+    "For now, the treaty's future remains uncertain, and with it, the water on which millions of people depend."
+   ]
+  },
+  {
+   "type": "title",
+   "chapter": "Chapter five",
+   "chapter_name": "The blind dolphin",
+   "text": "The blind dolphin",
+   "bg": [
+    28.05,
+    69.3,
+    9.0
+   ],
+   "dur": 3.6,
+   "xfade": 0.9
+  },
+  {
+   "type": "sat",
+   "cam": [
+    [
+     29.0,
+     70.2,
+     7.4
+    ],
+    [
+     28.05,
+     69.3,
+     8.9
+    ]
+   ],
+   "rivers": [
+    {
+     "name": "Indus",
+     "t0": 0,
+     "t1": 0.001,
+     "width": 5,
+     "flow": true
+    }
+   ],
+   "labels": [
+    {
+     "lat": 28.42,
+     "lon": 69.71,
+     "text": "Guddu Barrage",
+     "style": "pin",
+     "at": 1
+    },
+    {
+     "lat": 27.68,
+     "lon": 68.85,
+     "text": "Sukkur Barrage",
+     "style": "pin",
+     "at": 1.2,
+     "side": "l"
+    }
+   ],
+   "lower": [
+    "Indus river dolphin",
+    "Platanista minor · 'bhulan'"
+   ],
+   "lines": [
+    "The Indus is also home to one of the rarest mammals on Earth: the Indus river dolphin, known locally as the bhulan.",
+    "It is almost blind, and finds its way and its food in the muddy water using sound.",
+    "It lives only in the Indus river system, and is listed as endangered. Its range has shrunk by around eighty percent, largely because barrages have cut the river into sections."
+   ]
+  },
+  {
+   "type": "bars",
+   "caption": "Indus river dolphins counted in 2017 (WWF-Pakistan survey)",
+   "bg": [
+    28.05,
+    69.3,
+    8.0
+   ],
+   "items": [
+    {
+     "label": "Chashma–Taunsa",
+     "value": 170,
+     "text": "170"
+    },
+    {
+     "label": "Taunsa–Guddu",
+     "value": 571,
+     "text": "571"
+    },
+    {
+     "label": "Guddu–Sukkur",
+     "value": 1075,
+     "text": "1,075"
+    }
+   ],
+   "lines": [
+    "A WWF-Pakistan survey in twenty seventeen counted one thousand eight hundred and sixteen dolphins, most of them between the Guddu and Sukkur barrages in Sindh.",
+    "The good news is that their numbers have grown since the early two thousands, thanks to conservation efforts."
+   ]
+  },
+  {
+   "type": "title",
+   "chapter": "Chapter six",
+   "chapter_name": "The vanishing delta",
+   "text": "The vanishing delta",
+   "bg": [
+    24.1,
+    67.5,
+    9.0
+   ],
+   "dur": 3.6,
+   "xfade": 0.9
+  },
+  {
+   "type": "sat",
+   "cam": [
+    [
+     25.2,
+     68.3,
+     8.2
+    ],
+    [
+     24.2,
+     67.6,
+     9.3
+    ]
+   ],
+   "rivers": [
+    {
+     "name": "Indus",
+     "t0": 0,
+     "t1": 0.001,
+     "width": 4.5,
+     "flow": true
+    }
+   ],
+   "labels": [
+    {
+     "lat": 24.75,
+     "lon": 67.92,
+     "text": "Thatta",
+     "style": "pin",
+     "at": 0
+    },
+    {
+     "lat": 24.14,
+     "lon": 67.45,
+     "text": "Keti Bandar",
+     "style": "pin",
+     "at": 1,
+     "side": "l"
+    },
+    {
+     "lat": 23.75,
+     "lon": 66.9,
+     "text": "Arabian Sea",
+     "style": "water",
+     "at": 0.5,
+     "size": 36
+    }
+   ],
+   "lines": [
+    "At the end of its journey, the Indus spreads out into a vast delta, south of Thatta.",
+    "But very little of the river now reaches the sea. Dams, barrages and canals take most of its water long before it gets here.",
+    "Water researcher Hassan Abbas says the delta once received around one hundred and eighty to two hundred million acre-feet of water a year.",
+    "Under a nineteen ninety-one agreement, it should now get at least ten million. But in twelve of the past twenty-five years, it did not."
+   ]
+  },
+  {
+   "type": "bars",
+   "caption": "Area of the Indus delta (km²)",
+   "bg": [
+    24.2,
+    67.6,
+    8.5
+   ],
+   "items": [
+    {
+     "label": "1833",
+     "value": 13900,
+     "text": "13,900 km²",
+     "color": [
+      94,
+      200,
+      255
+     ]
+    },
+    {
+     "label": "2018",
+     "value": 1067,
+     "text": "1,067 km²",
+     "color": [
+      232,
+      120,
+      90
+     ]
+    }
+   ],
+   "lines": [
+    "A twenty nineteen study by the US-Pakistan Center for Advanced Studies in Water found that the delta shrank from about thirteen thousand nine hundred square kilometres in eighteen thirty-three, to about one thousand and sixty-seven in twenty eighteen."
+   ]
+  },
+  {
+   "type": "stat",
+   "big": "92%",
+   "small": "of the Indus delta lost since 1833",
+   "bg": [
+    24.2,
+    67.6,
+    9.0
+   ],
+   "lines": [
+    "That is a loss of ninety-two percent.",
+    "As the river retreats, the sea moves in. In Kharo Chan, only three of its forty-two villages remain. The rest have been swallowed by the sea.",
+    "Its population fell from twenty-six thousand in nineteen eighty-eight, to about eleven thousand in twenty twenty-three."
+   ]
+  },
+  {
+   "type": "sat",
+   "cam": [
+    [
+     24.5,
+     68.0,
+     7.0
+    ],
+    [
+     30.0,
+     73.5,
+     4.7
+    ]
+   ],
+   "borders": true,
+   "rivers": [
+    {
+     "name": "Indus",
+     "t0": 0,
+     "t1": 0.001,
+     "width": 4,
+     "flow": true
+    }
+   ],
+   "lines": [
+    "From the glaciers of Tibet to the mangroves of Sindh, the Indus has shaped this land for thousands of years.",
+    "It fed some of humanity's first cities. It feeds Pakistan today. And its future will shape the lives of millions more.",
+    "This was the story of the Indus. Thank you for watching Maps and Musings."
+   ],
+   "post": 0.5
+  },
+  {
+   "type": "outro",
+   "bg": [
+    29.8,
+    71.0,
+    5.3
+   ],
+   "dur": 9.0,
+   "xfade": 1.0
+  }
+ ]
+}
