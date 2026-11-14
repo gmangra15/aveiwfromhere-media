@@ -58,16 +58,17 @@ def eio(t): t = max(0.0, min(1.0, t)); return 4 * t ** 3 if t < 0.5 else 1 - (-2
 # ---------------------------------------------------------------- tiles / satellite
 import requests
 _S = None; _TILES = {}
-def tile_img(z, x, y):
+def tile_img(z, x, y, src="eox"):
     global _S
     n = 2 ** z; x %= n
     if y < 0 or y >= n: return None
-    k = (z, x, y)
+    k = (src, z, x, y)
     if k in _TILES: return _TILES[k]
-    p = os.path.join(TILECACHE, f"img_{z}_{x}_{y}")
+    p = os.path.join(TILECACHE, f"img_{z}_{x}_{y}" if src == "eox" else f"bm_{z}_{x}_{y}")
     if not os.path.exists(p):
         if _S is None: _S = requests.Session(); _S.headers["User-Agent"] = "MapsAndMusings/1.0"
-        u = f"https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless_3857/default/g/{z}/{y}/{x}.jpg"
+        u = (f"https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless_3857/default/g/{z}/{y}/{x}.jpg" if src == "eox" else
+             f"https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/BlueMarble_NextGeneration/default/2004-08-01/GoogleMapsCompatible_Level8/{z}/{y}/{x}.jpeg")
         for a in range(5):
             try:
                 r = _S.get(u, timeout=60); r.raise_for_status(); open(p, "wb").write(r.content); break
@@ -94,8 +95,17 @@ class Cam:
         return (wx(np.asarray(lon, float), self.zoom) - self.cx + W / 2, wy(np.asarray(lat, float), self.zoom) - self.cy + H / 2)
 
 
+BM_FULL, EOX_FULL = 6.0, 6.9
 def sat_view(lat, lon, zoom, maxz=13):
-    L = int(min(maxz, max(1, math.ceil(zoom - 0.15))))
+    """NASA Blue Marble (public domain) for continent-scale views, Sentinel-2 cloudless (EOX) when zoomed in, blended between."""
+    if zoom <= BM_FULL: return _view(lat, lon, zoom, "bm", 8)
+    if zoom >= EOX_FULL: return _view(lat, lon, zoom, "eox", maxz)
+    r = ease((zoom - BM_FULL) / (EOX_FULL - BM_FULL))
+    return Image.blend(_view(lat, lon, zoom, "bm", 8), _view(lat, lon, zoom, "eox", maxz), r)
+
+
+def _view(lat, lon, zoom, src, maxz):
+    L = int(min(maxz, max(1, math.ceil(zoom - 0.15) + (1 if src == "bm" else 0))))
     s = 2 ** (zoom - L)
     cx, cy = wx(lon, L), wy(lat, L)
     hw, hh = W / 2 / s, H / 2 / s
@@ -105,7 +115,7 @@ def sat_view(lat, lon, zoom, maxz=13):
     can[:] = (12, 30, 52)
     for ty in range(ty0, ty1 + 1):
         for tx in range(tx0, tx1 + 1):
-            t = tile_img(L, tx, ty)
+            t = tile_img(L, tx, ty, src)
             if t is not None:
                 can[(ty - ty0) * 256:(ty - ty0 + 1) * 256, (tx - tx0) * 256:(tx - tx0 + 1) * 256] = t
     im = Image.fromarray(can)
@@ -417,7 +427,7 @@ def r_timeline(sh, u, tl, t, fi):
         fs = F("Regular", 28)
         lines = wrap(d, e["text"], fs, 330)
         for j, ln in enumerate(lines):
-            yt = (yy - 80 - (len(lines) - 1 - j) * 36) if up else (yy + 50 + j * 36)
+            yt = (yy - 80 - (len(lines) - 1 - j) * 36) if up else (yy + 64 + j * 36)
             d.text((x, yt), ln, font=fs, fill=(230, 234, 242, int(255 * a)), anchor="mm")
     return im
 
