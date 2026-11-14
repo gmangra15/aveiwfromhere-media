@@ -705,11 +705,10 @@ def make(spec, out, only=None, stills=None):
             FL.render(fs, fdir)
         else:
             todo = [k for k in range(n) if not os.path.exists(os.path.join(fdir, f"{k:05d}.jpg"))]
-            for part in range(2):
-                if todo[part::2]: jobs.append((dict(fs, only=todo[part::2], tilecache=fs_tc), fdir))
+            if todo: jobs.append((dict(fs, only=todo, tilecache=fs_tc), fdir))  # one process: 3D terrain needs ~3 GB RAM
         sh["_fn"] = n
-    if jobs:
-        with Pool(2) as p: p.starmap(FL.render, jobs)
+    for job in jobs:
+        FL.render(*job)
     if stills:
         res = []
         for si, fr in stills:
