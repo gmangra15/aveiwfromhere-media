@@ -147,7 +147,7 @@ def grain(im, fi):
     global _GRAIN
     if _GRAIN is None:
         rng = np.random.default_rng(7)
-        _GRAIN = [rng.normal(0, 3.2, (H, W, 1)).astype(np.float32) for _ in range(4)]
+        _GRAIN = [rng.normal(0, 1.8, (H, W, 1)).astype(np.float32) for _ in range(4)]
     a = np.asarray(im).astype(np.float32) + _GRAIN[fi % 4]
     return Image.fromarray(np.clip(a, 0, 255).astype(np.uint8))
 
