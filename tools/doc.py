@@ -691,15 +691,20 @@ def make(spec, out, only=None, stills=None):
                 labs.append(dict(lb, t0=max(0, a0), t1=a1))
             else: labs.append(lb)
         fs["labels"] = labs; fs.pop("only", None)
-        fdir = os.path.join(tmp, f"flight{i}"); sh["_fdir"] = fdir
+        import hashlib
+        fkey = hashlib.sha1(json.dumps(fs, sort_keys=True).encode()).hexdigest()[:16]
+        fdir = os.path.join("/home/claude/flighttest/fcache", fkey); os.makedirs(fdir, exist_ok=True); sh["_fdir"] = fdir
         n = int(fs["seconds"] * 25)
+        if not stills and len(os.listdir(fdir)) >= n:
+            sh["_fn"] = n; continue
         if stills:
             fs["only"] = sorted({min(n - 1, max(0, int(fr * sh["_dur"] * FPS) + dd)) for (si, fr) in stills if si == i for dd in (-1, 0, 1)})
             if not fs["only"]: continue
             FL.render(fs, fdir)
         else:
+            todo = [k for k in range(n) if not os.path.exists(os.path.join(fdir, f"{k:05d}.jpg"))]
             for part in range(2):
-                jobs.append((dict(fs, only=list(range(part, n, 2))), fdir))
+                jobs.append((dict(fs, only=todo[part::2]), fdir))
         sh["_fn"] = n
     if jobs:
         with Pool(2) as p: p.starmap(FL.render, jobs)
