@@ -320,6 +320,11 @@ def bg_still(key, slow=0.0):
 
 
 def card_bg(sh, u, dark=0.55, blur=6):
+    if sh.get("bg_photo"):
+        im = photo_frame({"_img": sh["bg_photo"], "_img_key": sh["bg_photo"], "zoom": [1.0, 1.08]}, u)
+        if blur: im = im.filter(ImageFilter.GaussianBlur(blur))
+        a = np.asarray(im).astype(np.float32) * (1 - dark) + np.array(NAVY, np.float32) * dark * 0.6
+        return Image.fromarray(np.clip(a, 0, 255).astype(np.uint8))
     key = sh.get("bg", [30.0, 70.0, 5.0])
     im = bg_still(key, u)
     if blur: im = im.filter(ImageFilter.GaussianBlur(blur))
@@ -344,7 +349,12 @@ def r_sat(sh, u, tl, t, fi):
 
 
 def r_title(sh, u, tl, t, fi):
-    im = card_bg(sh, u, dark=0.5, blur=3 if sh.get("main") else 8)
+    if sh.get("clips"):
+        im = r_clips(dict(sh, _nolabel=True), u, tl, t, fi).filter(ImageFilter.GaussianBlur(1.5))
+        a = np.asarray(im).astype(np.float32) * 0.55
+        im = Image.fromarray(np.clip(a, 0, 255).astype(np.uint8))
+    else:
+        im = card_bg(sh, u, dark=0.5, blur=3 if sh.get("main") else 8)
     if sh.get("rivers"):
         lat, lon, z = sh["bg"]
         im = draw_overlays(im, Cam(lat, lon, z * 1.0 + 0.06 * u * 0), dict(sh, labels=[]), min(1, u * 2.2), tl, t)
@@ -489,8 +499,11 @@ def r_flight(sh, u, tl, t, fi):
 # ---------------------------------------------------------------- real footage
 FOOT = "/home/claude/footage"
 def clip_plan(sh):
-    """split the shot into its clips: list of (t_start, t_end, clip)."""
+    """split the shot into its clips: list of (t_start, t_end, clip). Clips with "at" start on that narration line."""
     cl = sh["clips"]; d = sh["_dur"] + 1.0
+    if all("at" in c for c in cl):
+        st = [0.0 if k == 0 else max(0.0, sh["_ltime"](c["at"]) - 0.25) for k, c in enumerate(cl)]
+        return [(st[k], (st[k + 1] if k + 1 < len(cl) else d), c) for k, c in enumerate(cl)]
     fixed = sum(c.get("len", 0) for c in cl); free = [c for c in cl if not c.get("len")]
     each = max(1.5, (d - fixed) / max(1, len(free))) if free else 0
     out, t = [], 0.0
@@ -562,7 +575,7 @@ def r_clips(sh, u, tl, t, fi):
         a2, b2, c2 = plan[j + 1]
         im = Image.blend(im, clip_img(c2, tl - a2 + XF, b2 - a2), eio((tl - (a2 - XF)) / XF))
     im = grade(im, sat=c.get("sat", 1.02), contrast=1.06)
-    if c.get("label"):  # location tag
+    if c.get("label") and not sh.get("_nolabel"):  # location tag
         d = ImageDraw.Draw(im, "RGBA"); age = tl - a
         al = ease((age - 0.4) / 0.6) * (1 - ease((age - (b - a) + 0.2) / 0.4))
         if al > 0.01:
@@ -773,7 +786,7 @@ def make(spec, out, only=None, stills=None):
     for sh in shots: sh["_ltime"] = mk_lt(sh)
     # real footage: cut clips to frames
     for i, sh in enumerate(shots):
-        if sh["type"] == "clips" and (not only or i in only) and (not stills or any(si == i for si, _ in stills)):
+        if sh.get("clips") and (not only or i in only) and (not stills or any(si == i for si, _ in stills)):
             prep_clips(sh, "/home/claude/flighttest/clipcache")
     # 3D flights
     import flight as FL
