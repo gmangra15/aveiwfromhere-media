@@ -71,11 +71,15 @@ def tile_img(z, x, y, src="eox"):
              f"https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/BlueMarble_NextGeneration/default/2004-08-01/GoogleMapsCompatible_Level8/{z}/{y}/{x}.jpeg")
         for a in range(5):
             try:
-                r = _S.get(u, timeout=60); r.raise_for_status(); open(p, "wb").write(r.content); break
+                r = _S.get(u, timeout=60); r.raise_for_status()
+                tmpf = f"{p}.{os.getpid()}.part"; open(tmpf, "wb").write(r.content); os.replace(tmpf, p); break  # atomic
             except requests.RequestException:
                 if a == 4: raise
                 import time; time.sleep(2 * (a + 1))
-    im = np.asarray(Image.open(p).convert("RGB"))
+    try:
+        im = np.asarray(Image.open(p).convert("RGB"))
+    except Exception:
+        os.remove(p); return tile_img(z, x, y, src)
     if len(_TILES) > 900: _TILES.clear()
     _TILES[k] = im
     return im
@@ -718,7 +722,7 @@ def make(spec, out, only=None, stills=None):
             p = f"{out}_still_{si}_{int(fr*100)}.jpg"; frame_job((fi, p)); res.append(p)
         print("\n".join(res)); return
     # frames
-    fr_dir = os.path.join(tmp, "f"); os.makedirs(fr_dir)
+    fr_dir = os.environ.get("DOC_FRAMES") or os.path.join(tmp, "f"); os.makedirs(fr_dir, exist_ok=True)  # DOC_FRAMES resumes a render
     dur = total
     n = int(dur * FPS)
     rng = range(n)
@@ -727,7 +731,9 @@ def make(spec, out, only=None, stills=None):
     else:
         sel = list(rng)
     with Pool(2) as p:
-        for k, _ in enumerate(p.imap(frame_job, [(fi, os.path.join(fr_dir, f"{j:06d}.jpg")) for j, fi in enumerate(sel)], chunksize=8)):
+        todo = [(fi, os.path.join(fr_dir, f"{j:06d}.jpg")) for j, fi in enumerate(sel)]
+        todo = [a for a in todo if not os.path.exists(a[1])]
+        for k, _ in enumerate(p.imap(frame_job, todo, chunksize=8)):
             if k % 500 == 0: print("frame", k, "/", len(sel), flush=True)
     t_off = sel[0] / FPS; t_len = len(sel) / FPS
     score(dur, os.path.join(tmp, "music.wav"), sting_at=0.2 if shots[0]["type"] == "intro" else None)
