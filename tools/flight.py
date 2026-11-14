@@ -40,8 +40,11 @@ def fetch(z, kind, bbox, cache):
                 except requests.RequestException:
                     if attempt == 4: raise
                     import time; time.sleep(3 * (attempt + 1))
-            open(p, "wb").write(r.content)
-        return xy, Image.open(p).convert("RGB")
+            tmpf = f"{p}.{os.getpid()}.part"; open(tmpf, "wb").write(r.content); os.replace(tmpf, p)  # atomic: safe with parallel workers
+        try:
+            return xy, Image.open(p).convert("RGB")
+        except Exception:
+            os.remove(p); return f(xy)
     out = Image.new("RGB", (256 * (x1 - x0 + 1), 256 * (y1 - y0 + 1)))
     with cf.ThreadPoolExecutor(8) as ex:
         for (x, y), im in ex.map(f, [(x, y) for x in range(x0, x1 + 1) for y in range(y0, y1 + 1)]):
@@ -100,7 +103,7 @@ def render(spec, out_dir):
     os.makedirs(out_dir, exist_ok=True)
     OW, OH = spec.get("out", [1080, 1920]); RW, RH = spec.get("render", [OW // 2, OH // 2])
     hz = spec.get("horizon", 0.40); lab_fs = spec.get("label_size", 40)
-    hp, tex, mpp, to_px = build(spec, os.path.join(os.path.dirname(out_dir.rstrip("/")) or ".", "tilecache"))
+    hp, tex, mpp, to_px = build(spec, spec.get("tilecache") or os.path.join(os.path.dirname(out_dir.rstrip("/")) or ".", "tilecache"))
     Hh, Ww = hp.shape
     n = int(spec.get("seconds", 60) * FPS)
     wps, tg = [], []

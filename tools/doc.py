@@ -683,6 +683,7 @@ def make(spec, out, only=None, stills=None):
         fs["seconds"] = sh["_dur"] + 1.0
         fs.update({"out": [W, H], "render": sh.get("render", [800, 450]), "horizon": fs.get("horizon16", 0.30), "label_size": 34,
                    "label_font": INTER.format("SemiBold")})
+        fs_tc = TILECACHE
         if "pitch16" in fs: fs["pitch"] = fs["pitch16"]
         labs = []
         for lb in fs.get("labels", []):
@@ -692,6 +693,7 @@ def make(spec, out, only=None, stills=None):
             else: labs.append(lb)
         fs["labels"] = labs; fs.pop("only", None)
         import hashlib
+        fs.pop("tilecache", None)
         fkey = hashlib.sha1(json.dumps(fs, sort_keys=True).encode()).hexdigest()[:16]
         fdir = os.path.join("/home/claude/flighttest/fcache", fkey); os.makedirs(fdir, exist_ok=True); sh["_fdir"] = fdir
         n = int(fs["seconds"] * 25)
@@ -704,7 +706,7 @@ def make(spec, out, only=None, stills=None):
         else:
             todo = [k for k in range(n) if not os.path.exists(os.path.join(fdir, f"{k:05d}.jpg"))]
             for part in range(2):
-                jobs.append((dict(fs, only=todo[part::2]), fdir))
+                if todo[part::2]: jobs.append((dict(fs, only=todo[part::2], tilecache=fs_tc), fdir))
         sh["_fn"] = n
     if jobs:
         with Pool(2) as p: p.starmap(FL.render, jobs)
