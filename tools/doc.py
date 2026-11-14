@@ -228,7 +228,8 @@ def draw_overlays(im, cam, sh, u, tl, t):
         xs, ys = cam.px(pts[:, 1], pts[:, 0]); xs, ys = partial(xs, ys, frac)
         if len(xs) < 2: continue
         col = [c / 255 for c in rv.get("color", WATER)]; wd = rv.get("width", 4.5)
-        fade = rv.get("alpha", 1.0)
+        fade = rv.get("alpha", 1.0) * (1 - ease((cam.zoom - 8.4) / 1.2))  # coarse river lines fade out in close-ups
+        if fade <= 0.02: continue
         for w_, a_ in ((wd * 5, 0.10), (wd * 2.6, 0.22), (wd, 0.95)):
             polyline(ctx, xs, ys); ctx.set_source_rgba(*col, a_ * fade); ctx.set_line_width(w_); ctx.stroke()
         if rv.get("flow"):
@@ -693,7 +694,7 @@ def make(spec, out, only=None, stills=None):
         fdir = os.path.join(tmp, f"flight{i}"); sh["_fdir"] = fdir
         n = int(fs["seconds"] * 25)
         if stills:
-            fs["only"] = sorted({min(n - 1, int(fr * sh["_dur"] * FPS)) for (si, fr) in stills if si == i})
+            fs["only"] = sorted({min(n - 1, max(0, int(fr * sh["_dur"] * FPS) + dd)) for (si, fr) in stills if si == i for dd in (-1, 0, 1)})
             if not fs["only"]: continue
             FL.render(fs, fdir)
         else:

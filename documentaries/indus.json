@@ -239,6 +239,10 @@
     "Further west, the river carves its way through deep, narrow gorges.",
     "Here, the Indus passes beneath Nanga Parbat. At eight thousand one hundred and twenty-six metres, it is the ninth-highest mountain in the world.",
     "Then the river turns south, and begins its long journey down towards the plains."
+   ],
+   "render": [
+    960,
+    540
    ]
   },
   {
@@ -601,6 +605,10 @@
     "In the north, the river is held back by Tarbela Dam, completed in nineteen seventy-six.",
     "It is one of the largest earth and rock filled dams in the world, and its lake stretches for about eighty kilometres.",
     "Tarbela stores water for the dry season, and generates hydroelectric power."
+   ],
+   "render": [
+    960,
+    540
    ]
   },
   {
@@ -851,17 +859,32 @@
     {
      "label": "Chashma–Taunsa",
      "value": 170,
-     "text": "170"
+     "text": "170",
+     "color": [
+      94,
+      200,
+      255
+     ]
     },
     {
      "label": "Taunsa–Guddu",
      "value": 571,
-     "text": "571"
+     "text": "571",
+     "color": [
+      94,
+      200,
+      255
+     ]
     },
     {
      "label": "Guddu–Sukkur",
      "value": 1075,
-     "text": "1,075"
+     "text": "1,075",
+     "color": [
+      94,
+      200,
+      255
+     ]
     }
    ],
    "lines": [
